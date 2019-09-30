@@ -1,0 +1,145 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}    
+\usepackage{german}               
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epstopdf}
+\usepackage[utf8]{inputenc}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+
+\newenvironment{explanation}{%
+   \setlength{\parindent}{0pt}
+   \itshape
+   \color{blue}
+}{}
+
+\newcommand{\projectname}{ReceiptManager}
+\newcommand{\productname}{ReceiptManager}
+\newcommand{\projectleader}{J. Richtsfeld}
+\newcommand{\documentstatus}{In Arbeit}
+%\newcommand{\documentstatus}{Submitted}
+%\newcommand{\documentstatus}{Released}
+\newcommand{\version}{V. 1.0}
+
+\begin{document}
+\begin{titlepage}
+\begin{flushright}
+%\includegraphics[scale=.5]{htlleondinglogo.png}
+\end{flushright}
+
+\vspace{10em}
+
+\begin{center}
+{\Huge Projektantrag} \\[3em]
+{\LARGE \productname} \\[3em]
+\end{center}
+
+\begin{flushleft}
+\begin{tabular}{|l|l|}
+\hline
+Projekt Name & \projectname \\ \hline
+Projekt Leiter & \projectleader \\ \hline
+Dokumenten Status & \documentstatus \\ \hline
+Version & \version \\ \hline
+\end{tabular}
+\end{flushleft}
+
+\end{titlepage}
+\section*{Revisions}
+\begin{tabular}{|l|l|l|}
+\hline
+\cellcolor[gray]{0.5}\textcolor{white}{Date} & \cellcolor[gray]{0.5}\textcolor{white}{Author} & \cellcolor[gray]{0.5}\textcolor{white}{Change} \\ \hline
+September 17, 2019&J.Richtsfeld/G. Rechberger/M. Hofmarcher/M. Kaindl&First version \\ \hline
+\end{tabular}
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+\section{Einleitung}
+Unser Projekt ist eine elektronische Belegsverwaltung, genannt ReceiptManager. Die Idee fuer dieses Projekt kommt von Gregor Rechberger. Diese Software sollte faehig sein aus einem Foto von einem Beleg die wichtigsten Daten zu erfassen, um sie schliesslich elektronisch zu speichern. 
+\pagebreak
+
+\section{Ausgangssituation}
+Aktuell muessen Klienten einer Steuerberatungskanzlei die Belege noch woechentlich bzw. monatlich zur Kanzlei bringen, damit die Buchhaltung erledigt werden kann. Danach muessen die Belege in Ordner abgelegt werden, diese Ordner werden dann in Wandschränke gebracht und alphabetisch und nach Jahr sortiert. Aktuell werden die Belegordner nach 5 Jahren aus den Schnränken entfernt und in einen Lagerraum gebracht, dort sind sie wie in den Wandschränken sortiert und müssen noch weitere 2 Jahre aufgehoben werden. Durch die Buchhalter werden die essentiellen Werte (Rechnungsbetrag, Rechnungstyp, Steuersatz, usw.) der aktuellen Belege in die Buchhaltungssoftware übertragen, damit dann die Buchungen durchgeführt werden können und die Buchhaltung erledigt werden kann.
+\pagebreak
+
+\section{Konkurrenz}
+Scopevisio und Parashift bietet Komplettlösung von der Buchhaltung bis zur automatischen Rechnungsverwaltung. Wir wollen für Buchhaltungssysteme, welche diese Rechnungsverwaltung noch nicht anbieten als Erweiterung dienen.
+\pagebreak
+
+\section{Allgemeine Bedingungen und Einschraenkung}
+
+Unsere System muss mit folgenden Problemen umgehen koennen:
+\begin{itemize}
+\item Die Rechnungen müssen mindestens 7 Jahre aufgehoben werden, wobei es keine Beschränkung auf die Form der Speicherung gibt.
+\item Jeder Nutzer muss sich authentifizieren, damit die sensiblen Daten der Rechnungen geschützt werden können.
+\item Der Beleg muss vom Kunden lediglich fotografiert oder gescannt werden, welcher anschließend in der kundenspezifischen Inbox des Steuerberaters erscheint. Bereits beim Hochladen wird eine OCR eingesetzt um die Rechnungsdaten herauszufinden. Die Resultate der OCR in Kombination mit dem Text-Parser werden in der Inbox als Standardwerte angezeigt und müssen bei Bestätigung vom Buchhalter korrigiert werden, um die Belege in das System aufzunehmen.
+\item Es wird sowohl ein Web- als auch Mobileclient benoetigt.
+\item Es soll dem Steuerberater moeglich sein, schnell Belege und die dazu relevanten Informationen zu finden.
+\end{itemize}
+
+\pagebreak
+
+\section{Projektziele und Systemkonzepte}
+Die Projektziele werden wie folgt zusammen gefasst:
+\begin{itemize}
+\item Die Klienten laden ihre Belege hoch, anschließend erfolgt die Datenextraktion durch die OCR. Anschließend muss der Buchhalter die Daten nach Korrektheit kontrollieren, damit
+die Rechnungen abgespeichert werden können.
+\item Die Rechnungen werden nach Klienten gruppiert, innerhalb der Klienten werden die Rechnungen nach Jahr gruppiert. Innerhalb eines Jahres können die Rechnungen nach Datum und Betrag sortiert werden.
+Dadurch können die Belege vom Buchhalter/Steuerberater schnell gefunden werden.
+\item Die Datenbank muss täglich gesichert werden, damit im Falle eines Systemausfalls oder -schadens keine Daten verloren gehen. 
+\item Das Backend soll auf zwei Teile aufgeteilt werden. Zum einen das OCR- System als Microservice und zum anderen das Hauptbackend zum Speichern und Verwalten der Belege.
+\item Beim Frontend wird für die Klienten eine Wepapp bzw Mobileapp angeboten. Der Steuerberater sieht eine Admin Oberfläche ebenfalls realisiert als Webapp.
+\end{itemize}
+
+\pagebreak
+\section{Chancen und Risken}
+
+
+Unsere Software hat die folgenden Vorteile:
+\begin{itemize}
+\item Der Klient/Steuerberater kann sich Zeit und daher Geld sparen.
+\item Die Verwaltung der Belege wird uebersichtlicher. 
+\item Der Steuerberater spart sich Platz, da die Belege nur noch digital gelagert werden.
+\end{itemize}
+
+Folgende Risiken muessen beachtet werden:
+
+\begin{itemize}
+\item Verlust von Belegen, die sensible Informationen enthalten.
+\item Durch falsch eingegebene Informationen koennten inkonsistente Datenbestaende entstehen.
+\end{itemize}
+
+\pagebreak
+\section{Planung}
+Teammitglieder:
+\begin{itemize}
+\item Teamleader: Julian Richtsfeld
+\item Frontenddeveloper: Maximilian Kaindl
+\item Mobiledeveloper: Mathias Hofmarcher
+\item Backenddeveloper: Gregor Rechberger, Julian Richtsfeld \hfill
+\end{itemize}
+Meilensteine:
+\begin{itemize}
+\item Klienten müssen sich Autorisieren um Belege hochladen zu können. Das selbe gilt für den Steuerberater um die Belege zu verwalten. - Fälligkeitsdatum 24.12
+\item Verwaltung der Rechnungen durch den Steuerberater - Fälligkeitsdatum Semesterende
+\item Design des Web -und Mobileclients - Fälligkeitsdatum April
+\item Einbindung einer OCR Software zur automatischen Texterkennung - Fälligkeitsdatum Juli\hfill
+\end{itemize}
+Benoetigte Ressourcen:
+\begin{itemize}
+\item Server
+\item OCR-Software Lizenz
+\end{itemize}
+Das Projekt beginnt mit 20.09.2019 und endet mit dem Ende des Schuljahres 2019/20. Der erste Prototype wird Mitte November zur verfuegung stehen. Die Implementierung beginnt mit Abschluss des Prototypes. Die groesseren Arbeitspakete sind die Entwicklungs des Front -und Backends und die Einbindung einer OCR-Software. Unsere Ziele schaetzen wir durchaus realistisch ein und gehen von einer fristgerechten Umsetzung aus.
+
+\end{document}  
