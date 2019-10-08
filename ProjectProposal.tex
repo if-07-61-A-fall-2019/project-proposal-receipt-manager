@@ -65,116 +65,117 @@ Version & \version \\ \hline
 27.09.2019&J.R./G.R./M.H./M.K.&Projektantrag Korrektur und Finalisierung \\ \hline
 \end{tabular}
 \pagebreak
-
 \tableofcontents
 \pagebreak
 
 \section{Einleitung}
+
 Unser Projekt ist eine elektronische Belegsverwaltung, genannt ReceiptManager. Diese Software soll in einer Steuerberatungskanzlei die Arbeit für Steuerberater und Klienten erleichtern. Außerdem besteht ein großes Einsparungspotzenial, da die unötigen und stupiden Arbeiten der Rechnungsverwaltung wegfallen und durch unsere Software ersetzt werden. Desweitern wird es als Erweiterung für schon bestehende Buchhaltungssysteme, die keine digitale Belegverwaltung oder automatisches Einlesen von Rechnung anbieten, verwendet.
 \pagebreak
 
-\section{Ausgangssituation}
 
-	Aktuell muessen Klienten einer Steuerberatungskanzlei die Belege noch woechentlich bzw. monatlich zur Kanzlei bringen, damit die Buchhaltung erledigt werden kann. \\
+\section{Ausgangssituation}
+Aktuell müssen Klienten einer Steuerberatungskanzlei die Belege noch woechentlich bzw. monatlich zur Kanzlei bringen, damit die Buchhaltung erledigt werden kann.\\
 	
-	Danach muessen die Belege in Ordner abgelegt werden, diese Ordner werden dann in Wandschränke gebracht und alphabetisch und nach Jahr sortiert. Aktuell werden die Belegordner nach 5 Jahren aus den Schränken entfernt und in einen Lagerraum gebracht, dort sind sie wie in den Wandschränken sortiert und müssen noch weitere 2 Jahre aufgehoben werden. Ein großes Problem hierbei ist, der große Platzbedarf bei der Lagerung der Rechnungen, für die sogar eigene Kellerabteile gemietet werden.\\
+Danach muessen die Belege in Ordner abgelegt werden, diese Ordner werden dann in Wandschränke gebracht und alphabetisch und nach Jahr sortiert. Aktuell werden die Belegordner nach 5 Jahren aus den Schränken entfernt und in einen Lagerraum gebracht, dort sind sie wie in den Wandschränken sortiert und müssen noch weitere 2 Jahre aufgehoben werden. Ein großes Problem hierbei ist, der große Platzbedarf bei der Lagerung der Rechnungen, für die sogar eigene Kellerabteile gemietet werden.\\
 	
-	Durch die Buchhalter werden die essentiellen Werte (Rechnungsbetrag, Rechnungstyp, Steuersatz, usw.) der aktuellen Belege in die Buchhaltungssoftware übertragen, damit dann die Buchungen durchgeführt werden können und die Buchhaltung erledigt werden kann.
-	Derzeit verbringt ein Buchhalter etwa 20 Prozent seiner Zeit mit dem Verwalten und Auslesen von Rechnungen. Bei einem Brutto-Monatsgehalt von \EUR{3000}, werden im Jahr etwa \EUR{8000} und im Monat \EUR{600} pro Mitarbeiter eingespart.\\
+Durch die Buchhalter werden die essentiellen Werte (Rechnungsbetrag, Rechnungstyp, Steuersatz, usw.) der aktuellen Belege in die Buchhaltungssoftware übertragen, damit dann die Buchungen durchgeführt werden können und die Buchhaltung erledigt werden kann.
+Derzeit verbringt ein Buchhalter etwa 20 Prozent seiner Zeit mit dem Verwalten und Auslesen von Rechnungen. Bei einem Brutto-Monatsgehalt von \EUR{3000}, werden im Jahr etwa \EUR{8000} und im Monat \EUR{600} pro Mitarbeiter eingespart.\\
 	
-	Aktuell gibt es zwei Firmen, Scopevisio und Parashift, die Komplettlösungen von der Buchhaltung bis zur automatischen Rechnungsverwaltung an. 
-	Die Aktiengesellschaft Parashift wirbt stark mit deren Rechnungserkennungsalgorithmus, der sehr treffsicher sein sollte. Sie bieten diesen Service als eine API oder verbunden mit ihrer Software an. Diese Software liest komplett ohne manuelle Eingaben alle wichtigen Elemente aus einer Rechnung oder einem Beleg, doch die Informationen können natürlich darauffolgend bearbeitet werden, wenn es nötig ist.\\	
+Aktuell gibt es zwei Firmen, Scopevisio und Parashift, die Komplettlösungen von der Buchhaltung bis zur automatischen Rechnungsverwaltung an.\\
+
+Die Aktiengesellschaft Parashift wirbt stark mit deren Rechnungserkennungsalgorithmus, der sehr treffsicher sein sollte. Sie bieten diesen Service als eine API oder verbunden mit ihrer Software an. Diese Software liest komplett ohne manuelle Eingaben alle wichtigen Elemente aus einer Rechnung oder einem Beleg, doch die Informationen können natürlich darauffolgend bearbeitet werden, wenn es nötig ist.\\
 	
-	Die Scopevisio AG bietet eine Komplettlösung an und setzt auch auf eine KI, doch verlässt sich nach der Erkennung auf den Steuerberater, der diese Daten überprüfen muss. Dies hat den Nachteil, dass es zu Lasten von dem Steuerberater fällt, jedoch sorgt dies für eine 100 Prozentige Trefferquote. \\
+Die Scopevisio AG bietet eine Komplettlösung an und setzt auch auf eine KI, doch verlässt sich nach der Erkennung auf den Steuerberater, der diese Daten überprüfen muss. Dies hat den Nachteil, dass es zu Lasten von dem Steuerberater fällt, jedoch sorgt dies für eine 100 Prozentige Trefferquote.\\
 	
-	Unsere Software soll als Erweiterung für Buchhaltungssysteme dienen, die den Teil der Rechnungsverwaltung und Rechnungseinlesen nicht anbieten. So muss der Steuerberater nicht das ihm bekannte Buchhaltungssystem wechseln, wenn er diese Erweiterungen haben möchte.
+Unsere Software soll als Erweiterung für Buchhaltungssysteme dienen, die den Teil der Rechnungsverwaltung und Rechnungseinlesen nicht anbieten. So muss der Steuerberater nicht das ihm bekannte Buchhaltungssystem wechseln, wenn er diese Erweiterungen haben möchte.\\
 \pagebreak
 
-\section{Allgemeine Bedingungen und Einschränkäung}
-
+\section{Allgemeine Bedinungen und Einschränkungen}
 Unsere System muss mit folgenden Problemen umgehen können:
+
 \begin{itemize}
+\item Die Rechnungen müssen laut der Bundesabgabenordnung (BAO) mindestens 7 Jahre aufgehoben werden, wobei es keine Beschränkung auf die Form der Speicherung gibt.
+
+\item Jeder Nutzer muss sich authentifizieren, damit die sensiblen Daten der Rechnungen geschützt werden können.
+Ein Mobileclient wird benötigt, um auf die Kamera des Mobiltelfons zugreifen zu können um so direkt den Beleg/ die Rechnung zu erfassen. Um den ReceiptManager auch am PC verwenden zu können oder Fotos in größeren Mengen zu übertragen, wird ein Webclient benötigt.
+
+\item Der Steuerberater soll möglich sein, schnell Belege und die dazu relevanten Informationen zu finden, ohne dabei mehrere Ordner mit Rechnungen durchforsten zu müssen.
+
+\item Desweitern soll die Verantwortung für die Richtigkeit der Rechnungswerte beim Steuerberater bleiben, um den Aufwand für den Klienten zu minimalisieren.
+
 \end{itemize}
-Die Rechnungen müssen laut der Bundesabgabenordnung (BAO) mindestens 7 Jahre aufgehoben werden, wobei es keine Beschränkung auf die Form der Speicherung gibt.\\
-
-Jeder Nutzer muss sich authentifizieren, damit die sensiblen Daten der Rechnungen geschützt werden können.
-Ein Mobileclient wird benötigt, um auf die Kamera des Mobiltelfons zugreifen zu können um so direkt den Beleg/ die Rechnung zu erfassen. Um den ReceiptManager auch am PC verwenden zu können oder Fotos in größeren Mengen zu übertragen, wird ein Webclient benötigt.\\
-
-Der Steuerberater soll möglich sein, schnell Belege und die dazu relevanten Informationen zu finden, ohne dabei mehrere Ordner mit Rechnungen durchforsten zu müssen.\\
-
-Desweitern soll die Verantwortung für die Richtigkeit der Rechnungswerte beim Steuerberater bleiben, um den Aufwand für den Klienten zu minimalisieren.
-
-
 \pagebreak
 
 \section{Projektziele und Systemkonzepte}
 Die Projektziele werden wie folgt zusammengefasst:
+
 \begin{itemize}
+\item Die Rechnungen werden nach Klienten gruppiert, innerhalb der Klienten werden die Rechnungen nach Jahr gruppiert. Innerhalb eines Jahres können die Rechnungen nach Datum und Betrag sortiert werden, um dem Steuerberater das Suchen der Rechnungen/Belege möglichst einfach und schnell zu gestalten.
+Die Datenbank muss täglich gesichert werden, damit im Falle eines Systemausfalls oder -schadens keine Daten verloren gehen.
+
+\item Das Backend soll auf zwei Teile aufgeteilt werden. Zum einen das OCR- System als Microservice und zum anderen das Hauptbackend zum Speichern und Verwalten der Belege.
+
+\item Beim Frontend wird für die Klienten eine Wepapp bzw. Mobileapp angeboten. Der Steuerberater sieht die Admin-Oberfläche nur in der Webapp da, kein Bedarf besteht dies in einer Mobileapp zu realisieren.
 \end{itemize}
-Der Beleg muss vom Kunden lediglich fotografiert oder gescannt werden, welcher anschließend in der kundenspezifischen Inbox des Steuerberaters erscheint. Bereits beim Hochladen wird eine OCR eingesetzt um die Rechnungsdaten herauszufinden. Die Resultate der OCR in Kombination mit dem Text-Parser werden in der Inbox als Standardwerte angezeigt und müssen bei Bestätigung vom Buchhalter korrigiert werden, um die Belege in das System aufzunehmen.\\
-
-Die Rechnungen werden nach Klienten gruppiert, innerhalb der Klienten werden die Rechnungen nach Jahr gruppiert. Innerhalb eines Jahres können die Rechnungen nach Datum und Betrag sortiert werden, um dem Steuerberater das Suchen der Rechnungen/Belege möglichst einfach und schnell zu gestalten.
-Die Datenbank muss täglich gesichert werden, damit im Falle eines Systemausfalls oder -schadens keine Daten verloren gehen. \\
-
-Das Backend soll auf zwei Teile aufgeteilt werden. Zum einen das OCR- System als Microservice und zum anderen das Hauptbackend zum Speichern und Verwalten der Belege.\\
-
-Beim Frontend wird für die Klienten eine Wepapp bzw. Mobileapp angeboten. Der Steuerberater sieht die Admin-Oberfläche nur in der Webapp da, kein Bedarf besteht dies in einer Mobileapp zu realisieren.
-
 
 \pagebreak
+
 \section{Chancen und Risken}
 
+\subsection{Vorteile und Chancen durch und von unsere Software}
 
-Unsere Software hat die folgenden Vorteile:
 \begin{itemize}
+\item Der Klient kann sich durch unsere Software Zeit und daher Geld sparen, da er keine Zeit mehr verschwenden muss, um die Rechnungen bei sich in Ordner einzusortieren und diese dann zum Steuerberater zu bringen.
+\item Die Verwaltung der Rechnungen wird einfacher und übersichtlicher, da das Suchen der Rechnungen in Ordner wegfällt und durch einfaches und schnelles Suchen in unserer Anwendung ersetzt wird.
 \end{itemize}
-Der Klient kann sich durch unsere Software Zeit und daher Geld sparen, da er keine Zeit mehr verschwenden muss, um die Rechnungen bei sich in Ordner einzusortieren und diese dann zum Steuerberater zu bringen.\\
 
-Die Verwaltung der Rechnungen wird einfacher und übersichtlicher, da das Suchen der Rechnungen in Ordner wegfällt und durch einfaches und schnelles Suchen in unserer Anwendung ersetzt wird.\\
-
-%	Desweitern wird Platz und daher wieder Geld gespart da die Rechnungen nur mehr digital gelagert werden und kein zusätzlicher Lagerraum angemietet werden muss, so wie es aktuell der Fall ist.
+%Desweitern wird Platz und daher wieder Geld gespart da die Rechnungen nur mehr digital gelagert werden und kein zusätzlicher Lagerraum angemietet werden muss, so wie es aktuell der Fall ist.
 Ein großer Vorteil ist die Ersparniss vom Arbeitszeit, da ein Buchhalter etwa 20 Prozent seiner Zeit mit dem Verwalten und Auslesen von Rechnungen verbringt. Bei einem Brutto-Monatsgehalt von \EUR{3000}, werden im Jahr etwa \EUR{8000} und im Monat \EUR{600} pro Mitarbeiter eingespart. Außerdem steigert unsere Anwendung die Produktivität der Buchhalter da sie sich nicht mehr mit den stupiden Arbeiten der Verwaltung auseinander setzen müssen.
 
-\begin{itemize}
-\end{itemize}
-Folgende Risiken müssen beachtet werden:
+\subsection{Risiken unserer Software}
 
+Folgende Risiken müssen beachtet werden:
 \begin{itemize}
 \item Verlust von Belegen, die sensible Informationen enthalten, da es beim Übertragen der Daten zu Fehlern kommen kann.
 \item Durch falsch eingegebene von Informationen durch den Steuerberater, könnten inkonsistente Datenbestände entstehen.
 \end{itemize}
 
 \pagebreak
+
 \section{Planung}
-Teammitglieder:
+
+\subsection{Teammitglieder}
+
 \begin{itemize}
-\item Teamleader: Julian Richtsfeld
-\item Frontenddeveloper: Maximilian Kaindl
-\item Mobiledeveloper: Mathias Hofmarcher
-\item Backenddeveloper: Gregor Rechberger, Julian Richtsfeld \hfill
+\item Teamleiter: Julian Richtsfeld
+\item Entwickler für Benutzeroberfläche: Maximilian Kaindl
+\item Entwickler für Web- und Mobilklienten: Matthias Hofmarcher
+\item Entwickler für OCR- und Parsercontainer für automatische Beleginformationserkennung: Gregor Rechberger
+\item Entwickler für Backend: Julian Richtsfeld
 \end{itemize}
-Meilensteine:
-\begin{itemize}
-\end{itemize}
-\begin{tabular}{|l|l|l|}
-	\hline
-	\cellcolor[gray]{0.5}\textcolor{white}{Date} & \cellcolor[gray]{0.5}\textcolor{white}{Meilenstein} \\ \hline
-	20.12.2019&Authentifizierung mit JSON-Webtoken und Identity Server 4\\ \hline
-	28.02.2020&Server Prototyp als Api-Endpunkt lauffähig \\ \hline
-	03.04.2020&Web-Client Prototyp lauffähig \\ \hline
-	24.04.2020&OCR-Prototyp abgeschlossen \\ \hline
-	29.05.2020&Mobile-Client-Prototyp lauffähig\\ \hline
-	26.06.2020&Lauffähiger Receipt-Manager Prototyp\\ \hline
+
+\subsection{Meilensteine}
+
+\begin{tabular}{|l|l|}
+\hline
+\cellcolor[gray]{0.5}\textcolor{white}{Date} & \cellcolor[gray]{0.5}\textcolor{white}{Meilenstein} \\ \hline
+20.12.2019&Authentifizierung mit JSON-Webtoken und Identity Server 4\\ \hline
+28.02.2020&Server Prototyp als Api-Endpunkt lauffähig \\ \hline
+03.04.2020&Web-Client Prototyp lauffähig \\ \hline
+24.04.2020&OCR-Prototyp abgeschlossen \\ \hline
+29.05.2020&Mobile-Client-Prototyp lauffähig\\ \hline
+26.06.2020&Lauffähiger Receipt-Manager Prototyp\\ \hline
 \end{tabular}
 
-\begin{itemize}
-\end{itemize}
+\subsection{Benoetigte Ressourcen}
 
-Benoetigte Ressourcen:
 \begin{itemize}
-\item Server
+\item Server (Eigenbau oder Cloud)
 \item OCR-Software Lizenz
 \end{itemize}
+
+\subsection{Projektdauer}
 Das Projekt beginnt mit 20.09.2019 und endet mit dem Ende des Schuljahres 2019/20. Der erste Prototyp wird Mitte November zur Verfuegung stehen. Die Implementierung beginnt mit Abschluss des Prototyps. Die groeßeren Arbeitspakete sind die Entwicklungs des Front -und Backends und die Einbindung einer OCR-Software. Unsere Ziele schaetzen wir durchaus realistisch ein und gehen von einer fristgerechten Umsetzung aus.
 
 \end{document}  
