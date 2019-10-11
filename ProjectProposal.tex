@@ -96,30 +96,28 @@ Unsere Software soll als Erweiterung für Buchhaltungssysteme dienen, die den Te
 \section{Allgemeine Bedinungen und Einschränkungen}
 Unsere System muss mit folgenden Problemen umgehen können:
 
-\begin{itemize}
-\item Die Rechnungen müssen laut der Bundesabgabenordnung (BAO) mindestens 7 Jahre aufgehoben werden, wobei es keine Beschränkung auf die Form der Speicherung gibt.
+Die Rechnungen müssen laut der Bundesabgabenordnung (BAO) mindestens 7 Jahre aufgehoben werden, wobei es keine Beschränkung auf die Form der Speicherung gibt.\\
 
-\item Jeder Nutzer muss sich authentifizieren, damit die sensiblen Daten der Rechnungen geschützt werden können.
-Ein Mobileclient wird benötigt, um auf die Kamera des Mobiltelfons zugreifen zu können um so direkt den Beleg/ die Rechnung zu erfassen. Um den ReceiptManager auch am PC verwenden zu können oder Fotos in größeren Mengen zu übertragen, wird ein Webclient benötigt.
+Jeder Nutzer muss sich authentifizieren, damit die sensiblen Daten der Rechnungen geschützt werden können.
+Ein Mobileclient wird benötigt, um auf die Kamera des Mobiltelfons zugreifen zu können um so direkt den Beleg/ die Rechnung zu erfassen. Um den ReceiptManager auch am PC verwenden zu können oder Fotos in größeren Mengen zu übertragen, wird ein Webclient benötigt.\\
 
-\item Der Steuerberater soll möglich sein, schnell Belege und die dazu relevanten Informationen zu finden, ohne dabei mehrere Ordner mit Rechnungen durchforsten zu müssen.
+Der Steuerberater soll möglich sein, schnell Belege und die dazu relevanten Informationen zu finden, ohne dabei mehrere Ordner mit Rechnungen durchforsten zu müssen.\\
 
-\item Desweitern soll die Verantwortung für die Richtigkeit der Rechnungswerte beim Steuerberater bleiben, um den Aufwand für den Klienten zu minimalisieren.
+Desweitern soll die Verantwortung für die Richtigkeit der Rechnungswerte beim Steuerberater bleiben, um den Aufwand für den Klienten zu minimalisieren.\\
 
-\end{itemize}
 \pagebreak
 
 \section{Projektziele und Systemkonzepte}
 Die Projektziele werden wie folgt zusammengefasst:
 
-\begin{itemize}
-\item Die Rechnungen werden nach Klienten gruppiert, innerhalb der Klienten werden die Rechnungen nach Jahr gruppiert. Innerhalb eines Jahres können die Rechnungen nach Datum und Betrag sortiert werden, um dem Steuerberater das Suchen der Rechnungen/Belege möglichst einfach und schnell zu gestalten.
-Die Datenbank muss täglich gesichert werden, damit im Falle eines Systemausfalls oder -schadens keine Daten verloren gehen.
 
-\item Das Backend soll auf zwei Teile aufgeteilt werden. Zum einen das OCR- System als Microservice und zum anderen das Hauptbackend zum Speichern und Verwalten der Belege.
+Die Rechnungen werden nach Klienten gruppiert, innerhalb der Klienten werden die Rechnungen nach Jahr gruppiert. Innerhalb eines Jahres können die Rechnungen nach Datum und Betrag sortiert werden, um dem Steuerberater das Suchen der Rechnungen/Belege möglichst einfach und schnell zu gestalten.\\
 
-\item Beim Frontend wird für die Klienten eine Wepapp bzw. Mobileapp angeboten. Der Steuerberater sieht die Admin-Oberfläche nur in der Webapp da, kein Bedarf besteht dies in einer Mobileapp zu realisieren.
-\end{itemize}
+Die Datenbank muss täglich gesichert werden, damit im Falle eines Systemausfalls oder -schadens keine Daten verloren gehen.\\
+
+Das Backend soll auf zwei Teile aufgeteilt werden. Zum einen das OCR- System als Microservice und zum anderen das Hauptbackend zum Speichern und Verwalten der Belege.\\
+
+Beim Frontend wird für die Klienten eine Wepapp bzw. Mobileapp angeboten. Der Steuerberater sieht die Admin-Oberfläche nur in der Webapp da, kein Bedarf besteht dies in einer Mobileapp zu realisieren.\\
 
 \includegraphics[scale=0.35]{SystemConcept}
 \pagebreak
@@ -129,13 +127,13 @@ Die Datenbank muss täglich gesichert werden, damit im Falle eines Systemausfall
 
 \subsection{Vorteile und Chancen durch und von unsere Software}
 
-\begin{itemize}
-\item Der Klient kann sich durch unsere Software Zeit und daher Geld sparen, da er keine Zeit mehr verschwenden muss, um die Rechnungen bei sich in Ordner einzusortieren und diese dann zum Steuerberater zu bringen.
-\item Die Verwaltung der Rechnungen wird einfacher und übersichtlicher, da das Suchen der Rechnungen in Ordner wegfällt und durch einfaches und schnelles Suchen in unserer Anwendung ersetzt wird.
-\end{itemize}
+Der Klient kann sich durch unsere Software Zeit und daher Geld sparen, da er keine Zeit mehr verschwenden muss, um die Rechnungen bei sich in Ordner einzusortieren und diese dann zum Steuerberater zu bringen.\\
+
+Die Verwaltung der Rechnungen wird einfacher und übersichtlicher, da das Suchen der Rechnungen in Ordner wegfällt und durch einfaches und schnelles Suchen in unserer Anwendung ersetzt wird.\\
+
 
 %Desweitern wird Platz und daher wieder Geld gespart da die Rechnungen nur mehr digital gelagert werden und kein zusätzlicher Lagerraum angemietet werden muss, so wie es aktuell der Fall ist.
-Ein großer Vorteil ist die Ersparniss vom Arbeitszeit, da ein Buchhalter etwa 20 Prozent seiner Zeit mit dem Verwalten und Auslesen von Rechnungen verbringt. Bei einem Brutto-Monatsgehalt von \EUR{3000}, werden im Jahr etwa \EUR{8000} und im Monat \EUR{600} pro Mitarbeiter eingespart. Außerdem steigert unsere Anwendung die Produktivität der Buchhalter da sie sich nicht mehr mit den stupiden Arbeiten der Verwaltung auseinander setzen müssen.
+Ein großer Vorteil ist die Ersparniss vom Arbeitszeit, da ein Buchhalter etwa 20 Prozent seiner Zeit mit dem Verwalten und Auslesen von Rechnungen verbringt. Bei einem Brutto-Monatsgehalt von \EUR{3000}, werden im Jahr etwa \EUR{8000} und im Monat \EUR{600} pro Mitarbeiter eingespart. Außerdem steigert unsere Anwendung die Produktivität der Buchhalter da sie sich nicht mehr mit den stupiden Arbeiten der Verwaltung auseinander setzen müssen.\\
 
 
 
