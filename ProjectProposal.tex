@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
-\geometry{letterpaper}    
-\usepackage{german}               
+\geometry{a4paper}    
+\usepackage[german]{babel}               
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -72,19 +72,18 @@ Version & \version \\ \hline
 
 \section{Einleitung}
 
-Unser Projekt ist eine elektronische Belegsverwaltung, genannt ReceiptManager. Diese Software soll in einer Steuerberatungskanzlei die Arbeit für Steuerberater und Klienten erleichtern. Außerdem besteht ein großes Einsparungspotzenial, da die unötigen und stupiden Arbeiten der Rechnungsverwaltung wegfallen und durch unsere Software ersetzt werden. Desweitern wird es als Erweiterung für schon bestehende Buchhaltungssysteme, die keine digitale Belegverwaltung oder automatisches Einlesen von Rechnung anbieten, verwendet.
+Unser Projekt ist eine elektronische Belegsverwaltung, genannt ReceiptManager. Diese Software soll in einer Steuerberatungskanzlei die Arbeit für Steuerberater und Klienten erleichtern. Außerdem besteht ein großes Einsparungspotential, da die unötigen und stupiden Arbeiten der Rechnungsverwaltung wegfallen und durch unsere Software ersetzt werden. Desweitern wird es als Erweiterung für schon bestehende Buchhaltungssysteme, die keine digitale Belegverwaltung oder automatisches Einlesen von Rechnung anbieten, verwendet.
 \pagebreak
-
 
 \section{Ausgangssituation}
 Aktuell müssen Klienten einer Steuerberatungskanzlei die Belege noch woechentlich bzw. monatlich zur Kanzlei bringen, damit die Buchhaltung erledigt werden kann.\\
 	
-Danach muessen die Belege in Ordner abgelegt werden, diese Ordner werden dann in Wandschränke gebracht und alphabetisch und nach Jahr sortiert. Aktuell werden die Belegordner nach 5 Jahren aus den Schränken entfernt und in einen Lagerraum gebracht, dort sind sie wie in den Wandschränken sortiert und müssen noch weitere 2 Jahre aufgehoben werden. Ein großes Problem hierbei ist, der große Platzbedarf bei der Lagerung der Rechnungen, für die sogar eigene Kellerabteile gemietet werden.\\
+Danach müssen die Belege in Ordner abgelegt werden, diese Ordner werden dann in Wandschränke gebracht und alphabetisch und nach Jahr sortiert. Aktuell werden die Belegordner nach 5 Jahren aus den Schränken entfernt und in einen Lagerraum gebracht, dort sind sie wie in den Wandschränken sortiert und müssen noch weitere 2 Jahre aufgehoben werden. Ein großes Problem hierbei ist, der große Platzbedarf bei der Lagerung der Rechnungen, für die sogar eigene Kellerabteile gemietet werden.\\
 	
-Durch die Buchhalter werden die essentiellen Werte (Rechnungsbetrag, Rechnungstyp, Steuersatz, usw.) der aktuellen Belege in die Buchhaltungssoftware übertragen, damit dann die Buchungen durchgeführt werden können und die Buchhaltung erledigt werden kann.
-Derzeit verbringt ein Buchhalter etwa 20 Prozent seiner Zeit mit dem Verwalten und Auslesen von Rechnungen. Bei einem Brutto-Monatsgehalt von \EUR{3000}, werden im Jahr etwa \EUR{8000} und im Monat \EUR{600} pro Mitarbeiter eingespart.\\
+Durch die Buchhalter werden die essentiellen Werte (Rechnungsbetrag, Rechnungstyp, Steuersatz, usw.) der aktuellen Belege in die Buchhaltungssoftware über\-tragen, damit dann die Buchungen durchgeführt werden können und die Buchhaltung erledigt werden kann.
+Derzeit verbringt ein Buchhalter etwa 20 Prozent seiner Zeit mit dem Verwalten und Auslesen von Rechnungen. Wenn ein Mitarbeiter im Monat um die 150 Stunden arbeitet, spart er sich dadurch 25 Stunden an Arbeitszeit. Außerdem wird weniger Platz für die Aufbewahrung der Rechnungen benötigt und dadurch können eventuell Mietkosten gespart. \\
 	
-Aktuell gibt es zwei Firmen, Scopevisio und Parashift, die Komplettlösungen von der Buchhaltung bis zur automatischen Rechnungsverwaltung an.\\
+Aktuell gibt es zwei Firmen, Scopevisio und Parashift, die Komplettlösungen von der Buchhaltung bis zur automatischen Rechnungsverwaltung anbieten.\\
 
 Die Aktiengesellschaft Parashift wirbt stark mit deren Rechnungserkennungsalgorithmus, der sehr treffsicher sein sollte. Sie bieten diesen Service als eine API oder verbunden mit ihrer Software an. Diese Software liest komplett ohne manuelle Eingaben alle wichtigen Elemente aus einer Rechnung oder einem Beleg, doch die Informationen können natürlich darauffolgend bearbeitet werden, wenn es nötig ist.\\
 	
