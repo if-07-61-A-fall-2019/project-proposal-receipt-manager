@@ -76,46 +76,32 @@ Unser Projekt ist eine elektronische Belegsverwaltung, genannt ReceiptManager. D
 \pagebreak
 
 \section{Ausgangssituation}
-Aktuell müssen Klienten einer Steuerberatungskanzlei die Belege noch woechentlich bzw. monatlich zur Kanzlei bringen, damit die Buchhaltung erledigt werden kann.\\
-	
-Danach müssen die Belege in Ordner abgelegt werden, diese Ordner werden dann in Wandschränke gebracht und alphabetisch und nach Jahr sortiert. Aktuell werden die Belegordner nach 5 Jahren aus den Schränken entfernt und in einen Lagerraum gebracht, dort sind sie wie in den Wandschränken sortiert und müssen noch weitere 2 Jahre aufgehoben werden. Ein großes Problem hierbei ist, der große Platzbedarf bei der Lagerung der Rechnungen, für die sogar eigene Kellerabteile gemietet werden.\\
-	
-Durch die Buchhalter werden die essentiellen Werte (Rechnungsbetrag, Rechnungstyp, Steuersatz, usw.) der aktuellen Belege in die Buchhaltungssoftware über\-tragen, damit dann die Buchungen durchgeführt werden können und die Buchhaltung erledigt werden kann.
-Derzeit verbringt ein Buchhalter etwa 20 Prozent seiner Zeit mit dem Verwalten und Auslesen von Rechnungen. Wenn ein Mitarbeiter im Monat um die 150 Stunden arbeitet, spart er sich dadurch 25 Stunden an Arbeitszeit. Außerdem wird weniger Platz für die Aufbewahrung der Rechnungen benötigt und dadurch können eventuell Mietkosten gespart. \\
-	
-Aktuell gibt es zwei Firmen, Scopevisio und Parashift, die Komplettlösungen von der Buchhaltung bis zur automatischen Rechnungsverwaltung anbieten.\\
 
-Die Aktiengesellschaft Parashift wirbt stark mit deren Rechnungserkennungsalgorithmus, der sehr treffsicher sein sollte. Sie bieten diesen Service als eine API oder verbunden mit ihrer Software an. Diese Software liest komplett ohne manuelle Eingaben alle wichtigen Elemente aus einer Rechnung oder einem Beleg, doch die Informationen können natürlich darauffolgend bearbeitet werden, wenn es nötig ist.\\
-	
-Die Scopevisio AG bietet eine Komplettlösung an und setzt auch auf eine KI, doch verlässt sich nach der Erkennung auf den Steuerberater, der diese Daten überprüfen muss. Dies hat den Nachteil, dass es zu Lasten von dem Steuerberater fällt, jedoch sorgt dies für eine 100 Prozentige Trefferquote.\\
-	
+Aktuell müssen Klienten einer Steuerberatungskanzlei die Belege noch woechentlich bzw. monatlich zur Kanzlei bringen, damit die Buchhaltung erledigt werden kann.\\ \\
+Danach müssen die Belege in Ordner abgelegt werden, diese Ordner werden dann in Wandschränke gebracht und alphabetisch und nach Jahr sortiert. Aktuell werden die Belegordner nach 5 Jahren aus den Schränken entfernt und in einen Lagerraum gebracht, dort sind sie wie in den Wandschränken sortiert und müssen noch weitere 2 Jahre aufgehoben werden. Ein großes Problem hierbei ist, der große Platzbedarf bei der Lagerung der Rechnungen, für die sogar eigene Kellerabteile gemietet werden.\\ \\
+Durch die Buchhalter werden die essentiellen Werte (Rechnungsbetrag, Rechnungstyp, Steuersatz, usw.) der aktuellen Belege in die Buchhaltungssoftware über\-tragen, damit dann die Buchungen durchgeführt werden können und die Buchhaltung erledigt werden kann.
+Derzeit verbringt ein Buchhalter etwa 20 Prozent seiner Zeit mit dem Verwalten und Auslesen von Rechnungen. Wenn ein Mitarbeiter im Monat um die 150 Stunden arbeitet, spart er sich dadurch 25 Stunden an Arbeitszeit. Außerdem wird weniger Platz für die Aufbewahrung der Rechnungen benötigt und dadurch können eventuell Mietkosten gespart.\\ \\
+Aktuell gibt es zwei Firmen, Scopevisio und Parashift, die Komplettlösungen von der Buchhaltung bis zur automatischen Rechnungsverwaltung anbieten.\\ \\
+Die Aktiengesellschaft Parashift wirbt stark mit deren Rechnungserkennungsalgorithmus, der sehr treffsicher sein sollte. Sie bieten diesen Service als eine API oder verbunden mit ihrer Software an. Diese Software liest komplett ohne manuelle Eingaben alle wichtigen Elemente aus einer Rechnung oder einem Beleg, doch die Informationen können natürlich darauffolgend bearbeitet werden, wenn es nötig ist.\\ \\
+Die Scopevisio AG bietet eine Komplettlösung an und setzt auch auf eine KI, doch verlässt sich nach der Erkennung auf den Steuerberater, der diese Daten überprüfen muss. Dies hat den Nachteil, dass es zu Lasten von dem Steuerberater fällt, jedoch sorgt dies für eine 100 Prozentige Trefferquote.\\ \\
 Unsere Software soll als Erweiterung für Buchhaltungssysteme dienen, die den Teil der Rechnungsverwaltung und Rechnungseinlesen nicht anbieten. So muss der Steuerberater nicht das ihm bekannte Buchhaltungssystem wechseln, wenn er diese Erweiterungen haben möchte.\\
 \pagebreak
 
 \section{Allgemeine Bedinungen und Einschränkungen}
-Unsere System muss mit folgenden Problemen umgehen können:
-
-Die Rechnungen müssen laut der Bundesabgabenordnung (BAO) mindestens 7 Jahre aufgehoben werden, wobei es keine Beschränkung auf die Form der Speicherung gibt.\\
-
+Unsere System muss mit folgenden Problemen umgehen können: \\ \\
+Die Rechnungen müssen laut der Bundesabgabenordnung (BAO) mindestens 7 Jahre aufgehoben werden, wobei es keine Beschränkung auf die Form der Speicherung gibt.\\ \\
 Jeder Nutzer muss sich authentifizieren, damit die sensiblen Daten der Rechnungen geschützt werden können.
-Ein Mobileclient wird benötigt, um auf die Kamera des Mobiltelfons zugreifen zu können um so direkt den Beleg/ die Rechnung zu erfassen. Um den ReceiptManager auch am PC verwenden zu können oder Fotos in größeren Mengen zu übertragen, wird ein Webclient benötigt.\\
-
-Der Steuerberater soll möglich sein, schnell Belege und die dazu relevanten Informationen zu finden, ohne dabei mehrere Ordner mit Rechnungen durchforsten zu müssen.\\
-
+Ein Mobileclient wird benötigt, um auf die Kamera des Mobiltelfons zugreifen zu können um so direkt den Beleg/ die Rechnung zu erfassen. Um den ReceiptManager auch am PC verwenden zu können oder Fotos in größeren Mengen zu übertragen, wird ein Webclient benötigt.\\ \\
+Der Steuerberater soll möglich sein, schnell Belege und die dazu relevanten Informationen zu finden, ohne dabei mehrere Ordner mit Rechnungen durchforsten zu müssen.\\ \\
 Desweitern soll die Verantwortung für die Richtigkeit der Rechnungswerte beim Steuerberater bleiben, um den Aufwand für den Klienten zu minimalisieren.\\
 
 \pagebreak
 
 \section{Projektziele und Systemkonzepte}
-Die Projektziele werden wie folgt zusammengefasst:
-
-
-Die Rechnungen werden nach Klienten gruppiert, innerhalb der Klienten werden die Rechnungen nach Jahr gruppiert. Innerhalb eines Jahres können die Rechnungen nach Datum und Betrag sortiert werden, um dem Steuerberater das Suchen der Rechnungen/Belege möglichst einfach und schnell zu gestalten.\\
-
-Die Datenbank muss täglich gesichert werden, damit im Falle eines Systemausfalls oder -schadens keine Daten verloren gehen.\\
-
-Das Backend soll auf zwei Teile aufgeteilt werden. Zum einen das OCR- System als Microservice und zum anderen das Hauptbackend zum Speichern und Verwalten der Belege.\\
-
+Die Projektziele werden wie folgt zusammengefasst: \\ \\
+Die Rechnungen werden nach Klienten gruppiert, innerhalb der Klienten werden die Rechnungen nach Jahr gruppiert. Innerhalb eines Jahres können die Rechnungen nach Datum und Betrag sortiert werden, um dem Steuerberater das Suchen der Rechnungen/Belege möglichst einfach und schnell zu gestalten.\\ \\
+Die Datenbank muss täglich gesichert werden, damit im Falle eines Systemausfalls oder -schadens keine Daten verloren gehen.\\ \\
+Das Backend soll auf zwei Teile aufgeteilt werden. Zum einen das OCR- System als Microservice und zum anderen das Hauptbackend zum Speichern und Verwalten der Belege.\\ \\
 Beim Frontend wird für die Klienten eine Wepapp bzw. Mobileapp angeboten. Der Steuerberater sieht die Admin-Oberfläche nur in der Webapp da, kein Bedarf besteht dies in einer Mobileapp zu realisieren.\\
 
 \includegraphics[scale=0.35]{SystemConcept}
@@ -126,11 +112,8 @@ Beim Frontend wird für die Klienten eine Wepapp bzw. Mobileapp angeboten. Der S
 
 \subsection{Vorteile und Chancen durch und von unsere Software}
 
-Der Klient kann sich durch unsere Software Zeit und daher Geld sparen, da er keine Zeit mehr verschwenden muss, um die Rechnungen bei sich in Ordner einzusortieren und diese dann zum Steuerberater zu bringen.\\
-
-Die Verwaltung der Rechnungen wird einfacher und übersichtlicher, da das Suchen der Rechnungen in Ordner wegfällt und durch einfaches und schnelles Suchen in unserer Anwendung ersetzt wird.\\
-
-
+Der Klient kann sich durch unsere Software Zeit und daher Geld sparen, da er keine Zeit mehr verschwenden muss, um die Rechnungen bei sich in Ordner einzusortieren und diese dann zum Steuerberater zu bringen.\\ \\
+Die Verwaltung der Rechnungen wird einfacher und übersichtlicher, da das Suchen der Rechnungen in Ordner wegfällt und durch einfaches und schnelles Suchen in unserer Anwendung ersetzt wird.\\ \\
 %Desweitern wird Platz und daher wieder Geld gespart da die Rechnungen nur mehr digital gelagert werden und kein zusätzlicher Lagerraum angemietet werden muss, so wie es aktuell der Fall ist.
 Ein großer Vorteil ist die Ersparniss vom Arbeitszeit, da ein Buchhalter etwa 20 Prozent seiner Zeit mit dem Verwalten und Auslesen von Rechnungen verbringt. Bei einem Brutto-Monatsgehalt von \EUR{3000}, werden im Jahr etwa \EUR{8000} und im Monat \EUR{600} pro Mitarbeiter eingespart. Außerdem steigert unsere Anwendung die Produktivität der Buchhalter da sie sich nicht mehr mit den stupiden Arbeiten der Verwaltung auseinander setzen müssen.\\
 
