@@ -3,11 +3,14 @@
 \contentsline {section}{\numberline {2}Ausgangssituation}{4}{section.2}% 
 \contentsline {section}{\numberline {3}Allgemeine Bedinungen und Einschr\IeC {\"a}nkungen}{6}{section.3}% 
 \contentsline {section}{\numberline {4}Projektziele und Systemkonzepte}{7}{section.4}% 
-\contentsline {section}{\numberline {5}Chancen und Risken}{9}{section.5}% 
-\contentsline {subsection}{\numberline {5.1}Vorteile und Chancen durch und von unsere Software}{9}{subsection.5.1}% 
-\contentsline {subsection}{\numberline {5.2}Risiken unserer Software}{9}{subsection.5.2}% 
-\contentsline {section}{\numberline {6}Planung}{10}{section.6}% 
-\contentsline {subsection}{\numberline {6.1}Teammitglieder}{10}{subsection.6.1}% 
-\contentsline {subsection}{\numberline {6.2}Meilensteine}{10}{subsection.6.2}% 
-\contentsline {subsection}{\numberline {6.3}Benoetigte Ressourcen}{10}{subsection.6.3}% 
-\contentsline {subsection}{\numberline {6.4}Projektdauer}{10}{subsection.6.4}% 
+\contentsline {subsection}{\numberline {4.1}Benutzeroberfl\IeC {\"a}che Steuerberater}{7}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Benutzeroberfl\IeC {\"a}che Klient}{9}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Backend}{10}{subsection.4.3}% 
+\contentsline {section}{\numberline {5}Chancen und Risken}{11}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Vorteile und Chancen durch und von unsere Software}{11}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.2}Risiken unserer Software}{11}{subsection.5.2}% 
+\contentsline {section}{\numberline {6}Planung}{12}{section.6}% 
+\contentsline {subsection}{\numberline {6.1}Teammitglieder}{12}{subsection.6.1}% 
+\contentsline {subsection}{\numberline {6.2}Meilensteine}{12}{subsection.6.2}% 
+\contentsline {subsection}{\numberline {6.3}Benoetigte Ressourcen}{12}{subsection.6.3}% 
+\contentsline {subsection}{\numberline {6.4}Projektdauer}{12}{subsection.6.4}% 

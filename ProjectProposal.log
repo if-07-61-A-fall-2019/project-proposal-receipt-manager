@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.20)  18 OCT 2019 11:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.20)  20 OCT 2019 13:28
 entering extended mode
 **./ProjectProposal.tex
 (ProjectProposal.tex
@@ -329,20 +329,20 @@ Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
  (ProjectProposal.aux)
 \openout1 = `ProjectProposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -393,7 +393,7 @@ LaTeX Font Info:    ... okay on input line 32.
 \everyMPtoPDFconversion=\toks28
 )
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 32.
+Package hyperref Info: Link coloring OFF on input line 35.
  ("D:\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -402,25 +402,25 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count111
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
 
 (ProjectProposal.out) (ProjectProposal.out)
 \@outlinefile=\write3
 \openout3 = `ProjectProposal.out'.
 
-<htlleondinglogo.png, id=51, 351.3125pt x 62.2325pt>
+<htlleondinglogo.png, id=63, 351.3125pt x 62.2325pt>
 File: htlleondinglogo.png Graphic file (type png)
 <use htlleondinglogo.png>
-Package pdftex.def Info: htlleondinglogo.png  used on input line 35.
+Package pdftex.def Info: htlleondinglogo.png  used on input line 38.
 (pdftex.def)             Requested size: 175.6558pt x 31.11617pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 48.
+LaTeX Font Info:    Try loading font information for U+msa on input line 51.
 
 ("D:\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 48.
+LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 
 ("D:\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -428,7 +428,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/HofmarcherM/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./htl
 leondinglogo.png>]
-Overfull \hbox (9.32841pt too wide) in paragraph at lines 59--68
+Overfull \hbox (9.32841pt too wide) in paragraph at lines 62--71
 []
  []
 
@@ -436,166 +436,106 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.68 \tableofcontents
+l.71 \tableofcontents
                       [1] (ProjectProposal.toc)
 \tf@toc=\write4
 \openout4 = `ProjectProposal.toc'.
 
- [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 78--87
+ [2] [3] [4] [5] [6]
+<MandantenListeConcept.png, id=115, 1159.33125pt x 527.72156pt>
+File: MandantenListeConcept.png Graphic file (type png)
+<use MandantenListeConcept.png>
+Package pdftex.def Info: MandantenListeConcept.png  used on input line 121.
+(pdftex.def)             Requested size: 418.25368pt x 190.38223pt.
 
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 121--122
+[][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--87
-
- []
-
-[4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 89--96
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--96
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--96
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--96
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--96
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--96
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 100--103
-
- []
-
-<SingleReceiptReview.png, id=100, 2610.75375pt x 1517.67pt>
+[7 <./MandantenListeConcept.png>]
+<SingleReceiptReview.png, id=121, 2610.75375pt x 1517.67pt>
 File: SingleReceiptReview.png Graphic file (type png)
 <use SingleReceiptReview.png>
-Package pdftex.def Info: SingleReceiptReview.png  used on input line 104.
-(pdftex.def)             Requested size: 261.09067pt x 151.77588pt.
+Package pdftex.def Info: SingleReceiptReview.png  used on input line 127.
+(pdftex.def)             Requested size: 418.25368pt x 243.13321pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
-
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 127--128
+[][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
-
+[8 <./SingleReceiptReview.png>]
+Overfull \hbox (13.45018pt too wide) in paragraph at lines 134--135
+\OT1/cmr/m/n/12 Ka-me-ra und kom-pak-te Bau-art ei-nes Smart-pho-nes erm[]oglic
+ht schnel-le Schnappsch[]usse
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
-
- []
-
-<SystemConcept.png, id=101, 1284.8pt x 722.7pt>
+<MobileSnapshotReceiptConcept.png, id=127, 521.95pt x 923.45pt>
+File: MobileSnapshotReceiptConcept.png Graphic file (type png)
+<use MobileSnapshotReceiptConcept.png>
+Package pdftex.def Info: MobileSnapshotReceiptConcept.png  used on input line 1
+36.
+(pdftex.def)             Requested size: 260.97435pt x 461.72386pt.
+[9 <./MobileSnapshotReceiptConcept.png>]
+<SystemConcept.png, id=133, 1284.8pt x 722.7pt>
 File: SystemConcept.png Graphic file (type png)
 <use SystemConcept.png>
-Package pdftex.def Info: SystemConcept.png  used on input line 110.
-(pdftex.def)             Requested size: 449.68674pt x 252.94878pt.
+Package pdftex.def Info: SystemConcept.png  used on input line 144.
+(pdftex.def)             Requested size: 418.25368pt x 441.7522pt.
 
-Overfull \hbox (49.05788pt too wide) in paragraph at lines 110--112
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 144--146
 [][]
  []
 
-[7 <./SingleReceiptReview.png>] [8 <./SystemConcept.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+[10 <./SystemConcept.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 152--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+Underfull \hbox (badness 10000) in paragraph at lines 152--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+Underfull \hbox (badness 10000) in paragraph at lines 152--155
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 128.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 162.
 
 ("D:\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 128.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 162.
 
-Overfull \hbox (18.53609pt too wide) in paragraph at lines 128--129
+Overfull \hbox (18.53609pt too wide) in paragraph at lines 162--163
 []\OT1/cmr/m/n/12 Verlust von Be-le-gen, die sen-si-ble In-for-ma-tio-nen ent-h
 al-ten, da es beim []Ubertragen
  []
 
 
-Overfull \hbox (5.29185pt too wide) in paragraph at lines 129--130
+Overfull \hbox (5.29185pt too wide) in paragraph at lines 163--164
 []\OT1/cmr/m/n/12 Durch falsch ein-ge-ge-be-ne von In-for-ma-tio-nen durch den 
 Steu-er-be-ra-ter, k[]onnten
  []
 
-[9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
+[11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 203.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 203.
  (ProjectProposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 203.
 Package rerunfilecheck Info: File `ProjectProposal.out' has not changed.
-(rerunfilecheck)             Checksum: FC3DCF1BAAADDA9EC5843144E4EAB720;779.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 169.
+(rerunfilecheck)             Checksum: 48788B082AEB64E74D3D1040FCFC2DDA;1002.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 203.
  ) 
 Here is how much of TeX's memory you used:
- 7331 strings out of 492895
- 105827 string characters out of 3135781
- 218397 words of memory out of 3000000
- 11097 multiletter control sequences out of 15000+200000
+ 7350 strings out of 492895
+ 106271 string characters out of 3135781
+ 217406 words of memory out of 3000000
+ 11109 multiletter control sequences out of 15000+200000
  10518 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,8n,35p,561b,363s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -604,9 +544,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Programs/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmr17.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/eurosym/f
 eymr10.pfb>
-Output written on ProjectProposal.pdf (11 pages, 198966 bytes).
+Output written on ProjectProposal.pdf (13 pages, 252416 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 112 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 
