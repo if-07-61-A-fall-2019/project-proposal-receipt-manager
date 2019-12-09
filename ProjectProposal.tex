@@ -122,14 +122,11 @@ Die Projektziele werden wie folgt zusammengefasst:
 Die Rechnungen können nach Klienten gruppiert, nach Attributen sortiert oder nach Attributen sortiert werden. Sortierattribute sind das Rechnungsdatum, der Betrag und das Hochladedatum. 
 In einem Rechnungseingang sind die Mandanten und die Anzahl ihrer zur Bestätigung ausstehenden Rechnungen aufgelistet. \\
 \par
-\includegraphics[width=\linewidth]{inbox}
 Die Grafik unterhalb zeigt die Userverwaltungsoberfläche von dem Admin. Hier kann auch wieder nach verschiedensten Attributen sortiert werden. Die Attribute sind Kanzleiname, Email, Adresse und Erstanmeldedatum.
 \par
-\includegraphics[width=\linewidth]{MandantenListeConcept}
 \noindent Beim Auswählen eines Mandantes wird auf eine Liste seiner eingegangenen Rechnungen weitergeleitet, wo dann weiters einzelne Rechnungen korrigiert und in das System aufgenommen werden können.
 \par
 
-\includegraphics[width=\linewidth]{SingleReceiptReview}
 
 \noindent Innerhalb eines Jahres können die Rechnungen nach Datum und Betrag sortiert werden, um dem Steuerberater das Suchen der Rechnungen/Belege möglichst einfach und schnell zu gestalten.
 \par
@@ -138,7 +135,6 @@ Die Grafik unterhalb zeigt die Userverwaltungsoberfläche von dem Admin. Hier ka
 \subsection{Benutzeroberfläche Klient}
 Ein großer Fokus liegt bei dem Projekt auf einer Mobilapp für den Klienten. Die Kamera und kompakte Bauart eines Smartphones ermöglicht schnelle Schnappschüsse und benötigt keinen Scanner.
 
-\includegraphics[scale=0.5]{MobileSnapshotReceiptConcept}
 
 \pagebreak
 \subsection{Backend}
@@ -146,7 +142,6 @@ Das Backend soll auf zwei Teile aufgeteilt werden. Zum einen das OCR- System als
 \skippingparagraph
 Beim Frontend wird für die Klienten eine Web App bzw. Mobileapp angeboten. Der Steuerberater sieht die Admin-Oberfläche nur in der Webapp da, kein Bedarf besteht dies in einer Mobileapp zu realisieren.
 
-\includegraphics[width=\linewidth,trim=130mm 10mm 100mm 10mm, clip]{SystemConcept}
 \pagebreak
 
 
@@ -164,8 +159,12 @@ Ein großer Vorteil ist die Ersparniss vom Arbeitszeit, da ein Buchhalter etwa 2
 
 Folgende Risiken müssen beachtet werden:
 \begin{itemize}
-\item Verlust von Belegen, die sensible Informationen enthalten, da es beim Übertragen der Daten zu Fehlern kommen kann.
-\item Durch falsch eingegebene von Informationen durch den Steuerberater, könnten inkonsistente Datenbestände entstehen.
+  \item Verlust von Belegen, die sensible 
+  Informationen enthalten, da es beim Übertragen der 
+  Daten zu Fehlern kommen kann.
+  \item Durch falsch eingegebene von Informationen 
+  durch den Steuerberater, könnten inkonsistente 
+  Datenbestände entstehen.
 \end{itemize}
 
 \pagebreak
@@ -176,23 +175,31 @@ Folgende Risiken müssen beachtet werden:
 
 \begin{itemize}
 \item Teamleiter: Julian Richtsfeld
-\item Entwickler für Benutzeroberfläche: Maximilian Kaindl
-\item Entwickler für Web- und Mobilklienten: Matthias Hofmarcher
-\item Entwickler für OCR- und Parsercontainer für automatische Beleginformationserkennung: Gregor Rechberger
-\item Entwickler für Backend: Julian Richtsfeld
+\item Entwickler: Maximilian Kaindl
+\item Entwickler: Matthias Hofmarcher
+\item Entwickler: Gregor Rechberger
 \end{itemize}
 
 \subsection{Meilensteine}
 
 \begin{tabular}{|l|l|}
-\hline
-\cellcolor[gray]{0.5}\textcolor{white}{Date} & \cellcolor[gray]{0.5}\textcolor{white}{Meilenstein} \\ \hline
-20.12.2019&Authentifizierung mit JSON-Webtoken und Identity Server 4\\ \hline
-28.02.2020&Server Prototyp als Api-Endpunkt lauffähig \\ \hline
-03.04.2020&Web-Client Prototyp lauffähig \\ \hline
-24.04.2020&OCR-Prototyp abgeschlossen \\ \hline
-29.05.2020&Mobile-Client-Prototyp lauffähig\\ \hline
-26.06.2020&Lauffähiger Receipt-Manager Prototyp\\ \hline
+  \hline
+  \cellcolor[gray]{0.5}\textcolor{white}{Date}
+  &\cellcolor[gray]{0.5}\textcolor{white}{Meilenstein} 
+  \\ \hline \hline
+  20.12.2019&Authentifizierung mit JSON-Webtoken und
+  Identity Server 4
+  \\ \hline
+  28.02.2020&Server Prototyp als Api-Endpunkt lauffähig 
+  \\ \hline
+  03.04.2020&Web-Client Prototyp lauffähig 
+  \\ \hline
+  24.04.2020&OCR-Prototyp abgeschlossen 
+  \\ \hline
+  29.05.2020&Mobile-Client-Prototyp lauffähig
+  \\ \hline
+  26.06.2020&Lauffähiger Receipt-Manager Prototyp
+  \\ \hline
 \end{tabular}
 
 \subsection{Benoetigte Ressourcen}
