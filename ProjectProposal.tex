@@ -30,6 +30,7 @@
 \newcommand{\productname}{ReceiptManager}
 \newcommand{\projectleader}{J. Richtsfeld}
 \newcommand{\documentstatus}{In Arbeit}
+\newcommand{\appname}{Dinly }
 \newcommand{\version}{V. 1.0}
 
 \begin{document}
@@ -77,43 +78,29 @@ Version & \version \\ \hline
 
 \section{Einleitung}
 
-Unser Projekt ist eine elektronische Belegsverwaltung, genannt ReceiptManager. Diese Software soll in einer Steuerberatungskanzlei die Arbeit für Steuerberater und Klienten erleichtern. Außerdem besteht ein großes Einsparungspotential, da die unötigen und stupiden Arbeiten der Rechnungsverwaltung wegfallen und durch unsere Software ersetzt werden. Desweitern wird es als Erweiterung für schon bestehende Buchhaltungssysteme, die keine digitale Belegverwaltung oder automatisches Einlesen von Rechnung anbieten, verwendet.
+\appname soll den Nutzern mit geringem Aufwand eine ausgewogene Ernährung ermöglichen. Dafür wird ein individueller Ernährungsplan erstellt, der auf den Daten des Benutzers basiert (zb. Gewicht, Größe, Ernährungsgewohnheiten, Allergien, Nahrungsunverträglichkeiten, etc.). Auf Basis dieses Ernährungsplans werden Rezepte zum selber kochen oder bestellen vorgeschlagen. Die benötigten Zutaten können direkt über die App bestellt werden und werden im geplanten Zeitrahmen an die Kunden geliefert (Kooperation mit Lebensmittlelkonzernen z.B.: Rewe, Spar) . Außerdem besteht die Möglichkeit sich direkt über die App fertige Gericht liefern zu lassen (Kooperation mit Lieferdiensten: Lieferando, Mjam). Des Weiteren wird durch einen Kalorientracker, die tägliche Kalorienaufnahme überwacht um eine optimale Ernährung zu gewährleisten.
 \pagebreak
 
 \section{Ausgangssituation}
 
-Aktuell müssen Klienten einer Steuerberatungskanzlei die Belege noch woechentlich bzw. monatlich zur Kanzlei bringen, damit die Buchhaltung erledigt werden kann.
-\skippingparagraph
-Danach müssen die Belege in Ordner abgelegt werden, diese Ordner werden dann in Wandschränke gebracht und alphabetisch und nach Jahr sortiert. Aktuell werden die Belegordner nach 5 Jahren aus den Schränken entfernt und in einen Lagerraum gebracht, dort sind sie wie in den Wandschränken sortiert und müssen noch weitere 2 Jahre aufgehoben werden. Ein großes Problem hierbei ist, der große Platzbedarf bei der Lagerung der Rechnungen, für die sogar eigene Kellerabteile gemietet werden.
-\skippingparagraph
-Durch die Buchhalter werden die essentiellen Werte (Rechnungsbetrag, Rechnungstyp, Steuersatz, usw.) der aktuellen Belege in die Buchhaltungssoftware über\-tragen, damit dann die Buchungen durchgeführt werden können und die Buchhaltung erledigt werden kann.
-Derzeit verbringt ein Buchhalter etwa 20 Prozent seiner Zeit mit dem Verwalten und Auslesen von Rechnungen. Wenn ein Mitarbeiter im Monat um die 150 Stunden arbeitet, spart er sich dadurch 25 Stunden an Arbeitszeit. Außerdem wird weniger Platz für die Aufbewahrung der Rechnungen benötigt und dadurch können eventuell Mietkosten gespart.
-\skippingparagraph
-Aktuell gibt es zwei Firmen, Scopevisio und Parashift, die Komplettlösungen von der Buchhaltung bis zur automatischen Rechnungsverwaltung anbieten.
-\skippingparagraph
-Die Aktiengesellschaft Parashift wirbt stark mit deren Rechnungserkennungsalgorithmus, der sehr treffsicher sein sollte. Sie bieten diesen Service als eine API oder verbunden mit ihrer Software an. Diese Software liest komplett ohne manuelle Eingaben alle wichtigen Elemente aus einer Rechnu3ng oder einem Beleg, doch die Informationen können natürlich darauffolgend bearbeitet werden, wenn es nötig ist.
-\skippingparagraph
-Die Scopevisio AG bietet eine Komplettlösung an und setzt auch auf eine KI, doch verlässt sich nach der Erkennung auf den Steuerberater, der diese Daten überprüfen muss. Dies hat den Nachteil, dass es zu Lasten von dem Steuerberater fällt, jedoch sorgt dies für eine 100 Prozentige Trefferquote.
-\skippingparagraph
-Unsere Software soll als Erweiterung für Buchhaltungssysteme dienen, die den Teil der Rechnungsverwaltung und Rechnungseinlesen nicht anbieten. So muss der Steuerberater nicht das ihm bekannte Buchhaltungssystem wechseln, wenn er diese Erweiterungen haben möchte.
-\par
-\pagebreak
+Die Ernährung in der westlichen Welt wird immer schlechter. Die Bevölkerung möchte tendenziell weniger Zeit für die Planung und Zubereitung von Mahlzeiten aufwenden. Da oft keine Ideen für neue Speisen vorhanden sind, wird die Ernährung schnell eintönig und unausgewogen. Betreibt man zusätzlich noch Sport und möchte seine Kalorienzufuhr überwachen, so ist dies sehr Aufwendig, da jeder Bestandteil einer Mahlzeit manuell eingegeben werden muss. Dazu kommt, dass man seine Lebensmitteleinkäufe gut planen muss um Abfälle zu vermeiden und Geld zu sparen.
+
+Kokurrenz
+
+Unser Ansatzpunkt
+
 
 \section{Allgemeine Bedinungen und Einschränkungen}
-Unsere System muss mit folgenden Problemen umgehen können: 
-\skippingparagraph
-Die Rechnungen müssen laut der Bundesabgabenordnung (BAO) mindestens 7 Jahre aufgehoben werden, wobei es keine Beschränkung auf die Form der Speicherung gibt.
-\skippingparagraph
-Die Datenbank muss täglich gesichert werden, damit im Falle eines Systemausfalls oder -schadens keine Daten verloren gehen.
-\skippingparagraph
-Jeder Nutzer muss sich authentifizieren, damit die sensiblen Daten der Rechnungen geschützt werden können.
-Ein Mobileclient wird benötigt, um auf die Kamera des Mobiltelfons zugreifen zu können um so direkt den Beleg/ die Rechnung zu erfassen. Um den ReceiptManager auch am PC verwenden zu können oder Fotos in größeren Mengen zu übertragen, wird ein Webclient benötigt.
-\skippingparagraph
-Der Steuerberater soll möglich sein, schnell Belege und die dazu relevanten Informationen zu finden, ohne dabei mehrere Ordner mit Rechnungen durchforsten zu müssen.
-\skippingparagraph
-Desweitern soll die Verantwortung für die Richtigkeit der Rechnungswerte beim Steuerberater bleiben, um den Aufwand für den Klienten zu minimalisieren.
-\par
-\pagebreak
+Unsere App muss mit folgenden Problemen umgehen können:
+
+\baselineskip Da das bevorzugtes Essen einer Person je nach Region variiert, muss unser System auf der beim Registrierungsprozess eingegebenen Daten, passende Rezepte/Gerichte vorschlagen.
+
+Der Ernährungsplan/Die ausgesuchten Gerichte müssen optimal auf den Geschmack des Kunden abgestimmt sein, um den Kunden an die App zu binden.
+
+Beim Registrierungsprozess werden viele sehr sensible Daten angegeben, daher müssen die Daten sicher gespeichert werden.
+
+Der Benutzer muss durch eine Variation von Lebensmitteln, die durch Bilder graphisch veranschaulicht sind (welche dem Nutzer eigentlich nur als Inspirierung dienen sollen) unterhalten werden und zeitlich an die App gebunden werden.
+
 
 \section{Projektziele und Systemkonzepte}
 Die Projektziele werden wie folgt zusammengefasst:
