@@ -1,0 +1,381 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epstopdf}
+\usepackage[english, german]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\newcommand{\comment}[1]{}
+\usepackage{hyperref}
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+
+\newenvironment{explanation}{%
+   \setlength{\parindent}{0pt}
+   \itshape
+   \color{blue}
+}{}
+
+\newcommand{\projectname}{Dinly}
+\newcommand{\productname}{Dinly}
+\newcommand{\projectleader}{P. Bauer}
+\newcommand{\documentstatus}{In process}
+%\newcommand{\documentstatus}{Submitted}
+%\newcommand{\documentstatus}{Released}
+\newcommand{\version}{V. 1.0}
+
+\begin{document}
+\begin{titlepage}
+\begin{flushright}
+\includegraphics[scale=.5]{htlleondinglogo.png}\\
+\end{flushright}
+
+\vspace{10em}
+
+\begin{center}
+{\Huge System Specification} \\[3em]
+{\LARGE \productname} \\[3em]
+\end{center}
+
+\begin{flushleft}
+\begin{tabular}{|l|l|}
+\hline
+Project Name & \projectname \\ \hline
+Project Leader & \projectleader \\ \hline
+Document state & \documentstatus \\ \hline
+Version & \version \\ \hline
+\end{tabular}
+\end{flushleft}
+
+\end{titlepage}
+\section*{Revisions}
+\begin{tabular}{|l|l|l|}
+\hline
+\cellcolor[gray]{0.5}\textcolor{white}{Date} & \cellcolor[gray]{0.5}\textcolor{white}{Author} & \cellcolor[gray]{0.5}\textcolor{white}{Change} \\ \hline
+November 03, 2019&P. Bauer&First version \\ \hline
+Februar 03, 2020&G. Rechberger&Goal polishing \\ \hline
+Februar 03, 2020&J. Richtsfeld& \\ \hline
+
+Februar 03, 2020&M. Hofmarcher&Application domain \\ \hline
+\end{tabular}
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+\section{Initial Situation and Goal}
+
+\subsection{Initial Situation}
+Durch Zeitmangel wird die Ernährung immer schlechter. Diese Aussage wird in folgenden Artikel untermauert: \hyperlink{https://www.gesund.at/ernaehrung/gesunde-ernaehrung-zeit/}{\color{blue}Ist der Zeitmangel wirklich schuld an der schlechten Ernährung?}
+
+Die Bevölkerung möchte tendenziell weniger Zeit für die Planung und Zubereitung von Mahlzeiten aufwenden. Da in der Eile oft, keine Ideen für neue Speisen vorhanden sind, wird die Ernährung schnell eintönig und unausgewogen. Daher greifen viele Leute aufgrund des Zeitmanges auf Fast Food zurück, welches besonders ungesund ist. 
+
+Selbst zu kochen kann hingegen positive Auswirkung auf die physische und mentale Gesundheit haben, wie zum Beispiel dieser Bericht zeigt:
+\hyperlink{https://www.huffpost.com/entry/cooking-longevity_n_1518466?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAD3kSnBoydOhZwbnnWL-ifUA6FwaQfkqdJv0bSVaUdyuhl4C6NVEeAAiluGbP9UVwuqUbucdfEpI52AC8rfEJkO3KkpP64ZMdVRKjGck46ZzFhcoiL22O4cm3ARE7xv_Iy1_wFgeMpTcOUYfxZ8hvpvg-gfYQlpe_FKIpiW4nF30}{\color{blue}Bericht zur Cambridge Studie zur Ernährung}.
+ Die angespannte Zeitsituation wird noch schwieriger wenn man zusätzlich Sport betreibt und seine Kalorienzufuhr überwachen möchte. Dazu kommt, dass man seine Lebensmitteleinkäufe gut planen muss, um Abfälle zu vermeiden und Geld zu sparen.
+
+\subsection{Application Domain}
+Unsere Vision ist, möglichst viele Leute zum Kochen zu bewegen und sie somit auf Dauer zu einem gesünderen Leben zu bewegen. Wir wollen dem Kunden mehr Übersicht über sein Konsumverhalten geben und Bewusstsein für gesunde Ernährung schaffen. Desweiteren wollen wir Nutzer mit Rezepten inspirieren und ihnen das alltägliche ``Was soll ich denn bloß kochen?''        ersparen. Wenn wir dies schaffen, reduzieren wir auch die Chance, dass Leute durch Unkreativität zum FastFood Restaraunt essen gehen. Das optimale Resultat wäre eine Verbesserung der Gesundheit und somit Lebensqualität des Nutzers ohne dabei viel Zeit aufwenden zu müssen. Außerdem können Hobbyköche ihre Künste und Kreationen auf unsere Plattform hochladen und Feedback von anderen Nutzern erhalten. 
+
+Was Konkurrenz betrifft, gibt es eine Applikation namens Yummly, welche bereits 5 Millionen Nutzer im Google Play Store hat. Diese ist in den Staaten bereits sehr etabliert und verfügt über alle Rezepte, welche einem in den Kopf kommen könnten. Wir werden deswegen sehr viel Wert auf unseren Ernährungsplan- generator legen, um ein Alleinstellungsmerkmal zu schaffen. Außerdem werden wir versuchen, unsere Applikation noch mehr an das Kochhobby des Nutzers zu binden und jegliche Möglichkeiten zur Communitybildung zu nutzen.
+
+Ein weiterer Konkurent wäre Chefkoch, sie bieten auch eine Bestellfunktion (jedoch nur in Deutschland) und zeigen die Kalorienzahl einer Mahlzeit an(wir wollen zusätzlich die Makros anzeigen). 
+
+Ein Beispiel hierzu wäre eine ``Teilen`` Funktion, die es dem Nutzer ermöglicht, das Gekochte mit Referenzen auf unsere Applikation in der Story einer seiner Social-Media Platformen zu posten. Dies motiviert Andere, die dann auch dieses Rezept mithilfe unserer Applikation probieren.
+
+
+\subsubsection{Glossary}
+
+Community: Eine Gruppe, die aktiv die App benutzt und diese vielleicht auch weiterempfehlt
+
+
+
+\subsection{Goal}
+Unsere Projektziele sind, eine App zu entwickeln mit der sich die Nutzer mit weniger Arbeit und Zeit gesünder und ausgewogener ernähren können. Desweiteren wollen wir eine Community aufbauen wollen, in welcher Nutzer ihren Kocherfolg auf sozialen Medien teilen, um noch mehr Nutzer aufbauen zu können. Auch wollen wir Nutzer inspirieren um häufiger selbst zu kochen und daher seltener auf Fertiggerichte oder Fastfood zurückgreifen.
+\pagebreak
+
+\section{Functional Requirements}
+\comment{
+    \begin{explanation}
+    Functional requirements describe the features of a system which are expected by a user in order to solve a specific problem. The requirements are derived from the business processes and work flows which are supported by the system.
+    
+    The description of functional requirements is accomplished by means of use cases. A use case describes a concrete and self-contained process. The sum of all use cases describes the system behaviour. Describe use cases in plain text and support it by provide clear and illustrative use case diagrams.
+    In case of a very data-oriented application provide a first version of a data model (business domain model). This model is the basis for the data base design in a later project stage. The data model is derived from the entities of the domain model.
+    \end{explanation}
+}
+
+\subsection{Overview}
+\begin{center}
+    \includegraphics[width=1.1\textwidth]{res/images/UseCaseDiagram.png}
+\end{center}
+
+\subsubsection{Mahlzeitenübersicht}
+Planung jeweils für eine Woche im Voraus, optionales eintragen der Essenszeiten in den Kalender
+Nutzer können Gerichte ändern, weil z.B. (zu aufwändig, schmeckt nicht, etc.) 
+
+\subsubsection{Spezifische Auswahl der Mahlzeiten}
+Empfehlungen basierend auf Rezepten mit denen der Nutzer zufrieden war. Rezepte können auch individuell gesucht und festgelegt werden. Eventuell selbst zusammengestellte Rezepte.
+
+\subsubsection{Rezeptsuche}
+Rezeptdatenbank mit großer Auswahl (Realisierung mittels Kooperation). Es müssen diverse Filter umgesetzt werden z.B.: vegan, vegetarisch, Region, Unvertraeglichkeiten, Intoleranzen.
+
+\subsubsection{Kalorientracker}
+Auf einer eigenen Seite können Nutzer ihre konsumierten Kalorien und Makronährstoffe \(Kohlenhydrate, Eiweiße, Fette\) sehen, sofern sie sich an den Ernährungsplan halten.
+
+\subsubsection{Einkaufsliste}
+Die für die Zubereitung der Rezepte benötigten Lebensmittel werden in einer Einkaufsliste notiert. Die Nutzer können nun bereits gekaufte Lebensmittel austragen und den Rest direkt über unsere App bestellen und sich nach Hause liefern lassen. Um eine zusätzliche Einkaufsliste zu vermeiden, können auch Artikel die nicht für die Zubereitung der Mahlzeit benötigt werden eingetragen werden. 
+
+Ebenfalls angedacht ist die Reihenfolge der Artikel in der Einkaufsliste an die Reihenfolge in der sie im Supermarkt stehen anzugleichen. Dabei soll vor allem die Gruppierung nach den Kategorien erfolgen.
+
+\subsubsection{Teilen}
+Die Nutzer können ihre zubereitete Mahlzeit direkt auf social Media Platformen wie z.B. Instagram, Facebook teilen. Dies ist wichtig um eine Community rund um unsere App aufzubauen und kostenlos Werbung zu betreiben.
+
+\subsection{Use Case 1: Kalender Slide}
+\subsubsection{General Description}
+\begin{tabular}{|p{.2\linewidth}|p{.65\linewidth}|}
+\hline 
+ID: & Calender slide \\ \hline
+Goal: & Essensplan für die nächste Woche anzeigen \\ \hline
+Precondition: & Klicken des "Essenplans"-Buttons im Menu\\ \hline
+Postcondition: & Der Essensplan wurde angezeigt. \\ \hline
+Involved Users: &Role name: Benutzer der App \\ \hline
+\end{tabular}
+
+\subsubsection{UI to call the use case}
+
+
+\begin{center}
+    \includegraphics[width=0.4\textwidth]{res/images/Calendar.jpeg}
+\end{center}
+
+
+\subsubsection{The Standard Use}
+Der Nutzer klickt auf den Essensplan-Button im Menu. Danach wird ihm/ihr der Plan für die nächste Woche angezeigt.
+
+\subsubsection{The Non-Standard Use}
+User hat keine Internetverbindung. Dies führt zu einer sofortigen Fehlermeldung die den User darauf hinweißt, die Verbindung herzustellen 
+
+
+
+\pagebreak
+\subsection{Use Case 2: Gerichtdetails}
+\subsubsection{General Description}
+
+\begin{tabular}{|p{.2\linewidth}|p{.65\linewidth}|}
+\hline 
+ID: & Specific Selection of the Meal \\ \hline
+Goal: & Anzeigen der Mahlzeit mit Inforamtionen \\ \hline
+Precondition: & Mahlzeit im Calendar Slide wurde angeklickt \\ \hline
+Postcondition: & Mahlzeit und essentielle Informationen wurden angezeigt \\ \hline
+Involved Users: &Role name: Benutzer der App \\ \hline
+\end{tabular}
+
+\subsubsection{UI to call the use case}
+
+\begin{center}
+    \includegraphics[width=0.35\textwidth]{res/images/MenueClick.png}
+\end{center}
+
+Der Nutzer klickt auf den Pancake und kommt hiermit zur Spezifischen übersicht für die Mahlzeit.
+\subsubsection{The Standard Use}
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{res/images/Breakfast.png}
+\end{center}
+
+
+Der User kann hier die eine Übersicht über das Gericht erhalten. Darüber hinaus kann man gleich alle benötigten Lebensmittel für die ausgewählte Portion in den Warenkorb hinzufügen. Hier wird auch der User über Nährwerte und die Kochdauer informiert.
+
+
+
+
+\pagebreak
+
+\subsection{Use Case 3: Rezeptsuche}
+\subsubsection{General Description}
+
+\begin{tabular}{|p{.2\linewidth}|p{.65\linewidth}|}
+\hline 
+ID: & ReciptSearch \\ \hline
+Goal: & Finden des gesuchten Rezeptes \\ \hline
+Precondition: & Wenn der Nutzer auf den Suchen Tab clickt \\ \hline
+Postcondition: & Der Nutzer hat sein gesuchtes Rezept gefunden \\ \hline
+Involved Users: &Role name: Benutzer der App \\ \hline
+\end{tabular}
+
+\subsubsection{UI to call the use case}
+
+\begin{center}
+    \includegraphics[width=0.4\textwidth]{res/images/Search.jpeg}
+\end{center}
+
+
+\subsubsection{The Standard Use}
+Der Nutzer klickt auf Suchen gibt seinen Suchbegriff und evtl Filter ein und findet sein gesuchtes Rezept.
+
+
+\subsubsection{The Non-Standard Use}
+Der Benuter sucht nach einem Rezept welches es nicht gibt. Er bekommt einen leere Seite mit dem Hinweis, dass nichts gefunden wurde.
+\pagebreak
+
+
+
+\subsection{Use Case 4: Kalorientracker}
+
+\subsubsection{General Description}
+
+\begin{tabular}{|p{.2\linewidth}|p{.65\linewidth}|}
+\hline 
+ID: & CalorieTracker \\ \hline
+Goal: & Der Nutzer bekommt eine Übersicht über alle Nährwerte die er an diesem Tag verzerrt hat.\\ \hline
+Precondition: & Wenn der Nutzer auf den Kalorien Tab geht. \\ \hline
+Postcondition: & Der Nutzer bekommt seine Nährewerte angezeigt. \\ \hline
+Involved Users: &Role name: Benutzer der App \\ \hline
+\end{tabular}
+
+\subsubsection{UI to call the use case}
+
+\begin{center}
+    \includegraphics[width=0.4\textwidth]{res/images/CalorieDashboard.jpeg}
+\end{center}
+
+
+\subsubsection{The Standard Use}
+Der Nutzer klickt auf den Kalorientracker Tab und bekommt eine Auswertung seiner konsumierten Nährwerte präsentiert. Darüber hinaus kann der User seine tägliche Menge von konsumierten Wasser angeben.
+
+\subsubsection{The Non-Standard Use}
+Der Nutzer hat an diesem Tag noch nichts gegessen oder keine Daten eingegeben und somit kann keine Nährwertaufschlüsselung präsentiert werden.
+\pagebreak
+
+
+
+\subsection{Use Case 5: Einkaufsliste}
+
+\subsubsection{General Description}
+
+\begin{tabular}{|p{.2\linewidth}|p{.65\linewidth}|}
+\hline 
+ID: & ShoppingList \\ \hline
+Goal: & Eine Einkaufsliste mit allen Benötigten Zutaten. \\ \hline
+Precondition: & Wenn der Nutzer auf den Einkaufslisten Tab klickt. \\ \hline
+Postcondition: & Der Nutzer bekommt eine Liste aller benötigter Zutaten präsentiert. \\ \hline
+Involved Users: &Role name: Benutzer der App \\ \hline
+\end{tabular}
+
+\subsubsection{UI to call the use case}
+\begin{explanation}
+\begin{figure}[h!]
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{res/images/ShoppingList.jpeg}
+        \caption{Einkaufsliste}
+    \end{center}
+\end{figure}\end{explanation}
+
+\subsubsection{The Standard Use}
+Der Nutzer wählt bei allen Rezepten aus ob er die Zutaten in die Einkaufsliste hinzufügen möchte. Nun kann er auf den Einkaufslisten Tab navigieren und alle benötigten Zutaten direkt bestellen oder manuell austragen falls er manche Zutaten bereits besitzt oder er die Zutaten selbst im Einzelhandel kauft. Zusätzlich kann er einen beliebigen Eintrag erstellen um nicht noch eine zusätzliche Einkaufsliste zu benötigen.
+
+\subsubsection{The Non-Standard Use}
+Der Lieferant hat manche Lebensmittel evtl. nicht im Angebot diese müssen hervorgehoben werden und der Nutzer darauf aufmerksam gemacht werden, dass er diese anderweitig beziehen muss. Dies ist besonders relevant wenn der Nutzer eigene Artikel eingetragen hat.
+\pagebreak
+
+\subsection{Use Case 6: Teilen}
+
+\subsubsection{General Description}
+
+\begin{tabular}{|p{.2\linewidth}|p{.65\linewidth}|}
+\hline 
+ID: & Teilen \\ \hline
+Goal: & Ein Foto der Zubereiteten Mahlzeit via Socialmedia zu tielen \\ \hline
+Precondition: & Beim Fertigstellen einer Mahlzeit \\ \hline
+Postcondition: & Ein Bild mit Wasserzeichen wurde auf Socialmedia geteilt\\ \hline
+Involved Users: &Role name: Benutzer der ein Rezept zubereitet hat \\ \hline
+\end{tabular}
+
+\subsubsection{UI to call the use case}
+\begin{center}
+    \includegraphics[width=0.4\textwidth]{res/images/Share.png}
+\end{center}
+
+
+\subsubsection{The Standard Use}
+Ein Benutzer bereitet eine Mahlzeit zu und bekommt ein Pop-Up, ob er denn ein Foto dieser Mahlzeit teilen möchte. Stimmt der Nutzer zu, so muss er ein Bild aufnehmen und kann dann auswählen auf welcher Platform er dieses Teilen möchte. Daraufhin wird ein Bild mit Wasserzeichen generiert und an die Social Media App weitergereicht.
+
+\subsubsection{The Non-Standard Use}
+Der Benutzer bricht während eines Schrittes ab oder verliert seine Internet Verbindung. Sollte er seinen Internetverbindung verlieren muss das Bild gespeichert werden und sobald wieder eine Verbindung besteht wird er gefragt ob er sein Bild nun teilen möchte.
+\pagebreak
+
+
+\section{Non-Functional Requirements}
+
+\subsection{NFR 1: Performance}
+\begin{tabular}{|p{.2\linewidth}|p{.65\linewidth}|}
+\hline 
+ID: & performance \\ \hline
+Name: & Performance \\ \hline
+Type	: & USE \\ \hline
+Descritpion: & Das System muss innerhalb von 300ms antworten  \\ \hline
+\end{tabular}
+
+\subsection{NFR 2: Sicherheit}
+\begin{tabular}{|p{.2\linewidth}|p{.65\linewidth}|}
+\hline 
+ID: & security \\ \hline
+Name: & Sicherheit \\ \hline
+Type	: & SEC \\ \hline
+Descritpion: & Die Nutzerdaten dürfen nur verschlüsselt übertragen werden.  \\ \hline
+\end{tabular}
+
+\subsection{NFR 3: Porting }
+\begin{tabular}{|p{.2\linewidth}|p{.65\linewidth}|}
+\hline 
+ID: &  porting\\ \hline
+Name: & Porting \\ \hline
+Type	: & MAINT \\ \hline
+Descritpion: & Die App muss auf Andriod und iOS geported werden können.  \\ \hline
+\end{tabular}
+
+The type of the NFR shall be taken from one of the following: The table below shall finally be deleted.
+
+\begin{tabular}{|p{.15\linewidth}|p{.25\linewidth}|p{.4\linewidth}|}
+\hline
+MAINT & Maintenance and portability requirement & Which maintenance or porting effort is expected in the future? Internationalization expected? Porting to different hardware platform?... \\ \hline
+SEC & Security requirement & Security requirements comprise confidentiality, data integrity, and availability. How much do we have to consider that data is not accessible to unauthorized persons? Is the correctness and/or consistency of data to be guaranteed? How severe are total system faults? \\ \hline
+LEGAL & Legal requirement & Are there any standards or legal constraints to be considered? \\ \hline
+USE & Usability Requirement & Usability covers all aspects to make the targeted user like to work with the software. \\ \hline
+EFFIC & Efficiency Requirement & Runtime and/or memory efficiency of the program. \\ \hline
+\end{tabular}
+\pagebreak
+
+\section{Quantity Structure}
+Es ist anzustreben, möglichst viele Rezepte und Zutaten zu speichern, um eine bestmögliche Auswahl an Rezepten/Gerichten anbieten zu können. Eine Datenbank ist zwingend notwendig, da es zu mehreren Zehtausend Datensätzen kommen wird. Natürlich müssen auch die Daten der Nutzer gespeichert werden, hier ist die Größe noch nicht ganz abschätzbar.
+
+
+\pagebreak
+\section{System Architecture and Interfaces}
+
+\begin{itemize}
+    \item Schnittstelle zu Lebensmittellieferanten: Lebensmittel müssen bestellt werden können und diese Bestellung an einene Lieferanten weitergereicht werden.
+    \item Schnittstelle zur Datenbank
+    \item Ionic Mobile Client
+    \item Data-seeding tool
+\end{itemize}
+
+
+
+\pagebreak
+\section{Acceptance Criteria} 
+\noindent Rezeptvorschläge:
+\indenDie Rezeptvorschläge müssen zuverlässig sein und den Bedingungen und den Essgewohnheiten des Users entsprechen
+
+\noindent Kalorientracker:
+Die Erfassung der Gesamtkalorien muss angemessen akkurat erfolgen und eine gute Übersicht über konsumierte Makronährstoffe bieten.
+
+\noindent Einkaufsliste:
+Das Einfügen und Entfernen eines Artikels muss zuverlässig und schnell erfolgen
+\end{document}
