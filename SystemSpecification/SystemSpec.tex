@@ -75,6 +75,7 @@ Februar 03, 2020&M. Hofmarcher&Application domain \\ \hline
 \subsection{Initial Situation}
 Durch Zeitmangel wird die Ernährung immer schlechter. Diese Aussage wird in folgenden Artikel untermauert: \hyperlink{https://www.gesund.at/ernaehrung/gesunde-ernaehrung-zeit/}{\color{blue}Ist der Zeitmangel wirklich schuld an der schlechten Ernährung?}
 
+
 Die Bevölkerung möchte tendenziell weniger Zeit für die Planung und Zubereitung von Mahlzeiten aufwenden. Da in der Eile oft, keine Ideen für neue Speisen vorhanden sind, wird die Ernährung schnell eintönig und unausgewogen. Daher greifen viele Leute aufgrund des Zeitmanges auf Fast Food zurück, welches besonders ungesund ist. 
 
 Selbst zu kochen kann hingegen positive Auswirkung auf die physische und mentale Gesundheit haben, wie zum Beispiel dieser Bericht zeigt:
@@ -92,24 +93,23 @@ Ein Beispiel hierzu wäre eine ``Teilen`` Funktion, die es dem Nutzer ermöglich
 
 
 \subsubsection{Glossary}
-
-Community: Eine Gruppe, die aktiv die App benutzt und diese vielleicht auch weiterempfehlt
-
+\begin{tabular}{|p{.2\linewidth}|p{.65\linewidth}|}
+\hline
+Community & Eine Gruppe von Nutzer, die unsere App benutzen und als gemeinsames Ziel verfolgen sich gesünder und ausgewogener zu ernähren. \\
+\hline 
+Fast Food & In Massenproduktion hergestellte, standardisierte Speisen, die für den schnellen Verzehr gedacht sind und daher meist ungesund.  \\ 
+\hline 
+Mahlzeit & Essen , das aus verschiedenen kalten oder warmen Speisen zusammengestellt ist und durch unser System vorgschlagen wird.\\ \hline
+Kalorienzufuhr & Zufuhr von Energie durch Nahrungsaufnahme   \\ 
+\hline 
+\end{tabular}
 
 
 \subsection{Goal}
-Unsere Projektziele sind, eine App zu entwickeln mit der sich die Nutzer mit weniger Arbeit und Zeit gesünder und ausgewogener ernähren können. Desweiteren wollen wir eine Community aufbauen wollen, in welcher Nutzer ihren Kocherfolg auf sozialen Medien teilen, um noch mehr Nutzer aufbauen zu können. Auch wollen wir Nutzer inspirieren um häufiger selbst zu kochen und daher seltener auf Fertiggerichte oder Fastfood zurückgreifen.
+Unsere Projektziele sind, eine App zu entwickeln mit der sich die Nutzer mit weniger Arbeit und Zeit gesünder und ausgewogener ernähren können. Desweiteren wollen wir eine Community aufbauen wollen, in welcher Nutzer ihren Kocherfolg auf sozialen Medien teilen, um noch mehr Nutzer aufbauen zu können. Auch wollen wir Nutzer inspirieren häufiger selbst zu kochen, um sich daher gesünder und ausgewogener ernähren und seltener auf ungesunde Fertiggerichte oder Fastfood zurückgreifen. Ein weiteres Ziel ist es, dass sich die Nutzer durch die gezielten und durchgeplanten Lebensmitteleinkäufe Geld sparen. Natürlich wird durch diese gezielte Einkäufe auch Lebensmittelabfälle reduziert und daher die Umwelt geschont.
 \pagebreak
 
 \section{Functional Requirements}
-\comment{
-    \begin{explanation}
-    Functional requirements describe the features of a system which are expected by a user in order to solve a specific problem. The requirements are derived from the business processes and work flows which are supported by the system.
-    
-    The description of functional requirements is accomplished by means of use cases. A use case describes a concrete and self-contained process. The sum of all use cases describes the system behaviour. Describe use cases in plain text and support it by provide clear and illustrative use case diagrams.
-    In case of a very data-oriented application provide a first version of a data model (business domain model). This model is the basis for the data base design in a later project stage. The data model is derived from the entities of the domain model.
-    \end{explanation}
-}
 
 \subsection{Overview}
 \begin{center}
@@ -118,24 +118,28 @@ Unsere Projektziele sind, eine App zu entwickeln mit der sich die Nutzer mit wen
 
 \subsubsection{Mahlzeitenübersicht}
 Planung jeweils für eine Woche im Voraus, optionales eintragen der Essenszeiten in den Kalender
-Nutzer können Gerichte ändern, weil z.B. (zu aufwändig, schmeckt nicht, etc.) 
+Nutzer können Gerichte ändern, weil z.B. zu aufwändig, schmeckt nicht, usw.. Über diese Übersicht kommt man auf die einzelnen Rezepte und kann sich diese näher ansehen.
 
 \subsubsection{Spezifische Auswahl der Mahlzeiten}
-Empfehlungen basierend auf Rezepten mit denen der Nutzer zufrieden war. Rezepte können auch individuell gesucht und festgelegt werden. Eventuell selbst zusammengestellte Rezepte.
+Sollte der Nutzer mit den vom System ausgewählten Mahlzeiten aus der Mahlzeitenübersicht nicht zufrieden sein, kann er diese natürlich ändern.
+Dazu verwendet er dann die integrierte Rezeptsuche, die auf jeden Nutzer genau zugschnitten ist.
 
 \subsubsection{Rezeptsuche}
-Rezeptdatenbank mit großer Auswahl (Realisierung mittels Kooperation). Es müssen diverse Filter umgesetzt werden z.B.: vegan, vegetarisch, Region, Unvertraeglichkeiten, Intoleranzen.
+Diese Auswahl/Suche von Rezepten und Mahlzeiten basiert auf Rezepten mit denen der Nutzer schon in der Vergangenheit zufrieden war, ähnliche Mahlzeiten/Rezepte werden dann dem Nutzer bevorzugt vorgeschlagen und empfohlen. Diese Vorschläge basieren des Weitern auch auf den Daten bei der Registrierung, um dem Nutzer Rezepte anzubieten die perfekt zum ihm/ihr passen.
+
+Rezepte könne
+nach Rezepte müssen natürlich auch Filter wie z.B.: vegan, vegetarisch, Unvertraeglichkeiten, Intoleranzen gesetzt werden können, um dem Nutzer eine gezielte Suche zu erleichtern. 
 
 \subsubsection{Kalorientracker}
-Auf einer eigenen Seite können Nutzer ihre konsumierten Kalorien und Makronährstoffe \(Kohlenhydrate, Eiweiße, Fette\) sehen, sofern sie sich an den Ernährungsplan halten.
+Auf einer eigenen Seite können Nutzer ihre konsumierten Kalorien und Makronährstoffe \(Kohlenhydrate, Eiweiße, Fette\) sehen, diese basieren auf den Mahlzeiten aus der Mahlzeitenübersicht.
 
 \subsubsection{Einkaufsliste}
 Die für die Zubereitung der Rezepte benötigten Lebensmittel werden in einer Einkaufsliste notiert. Die Nutzer können nun bereits gekaufte Lebensmittel austragen und den Rest direkt über unsere App bestellen und sich nach Hause liefern lassen. Um eine zusätzliche Einkaufsliste zu vermeiden, können auch Artikel die nicht für die Zubereitung der Mahlzeit benötigt werden eingetragen werden. 
 
-Ebenfalls angedacht ist die Reihenfolge der Artikel in der Einkaufsliste an die Reihenfolge in der sie im Supermarkt stehen anzugleichen. Dabei soll vor allem die Gruppierung nach den Kategorien erfolgen.
+Ebenfalls angedacht ist die Reihenfolge der Artikel in der Einkaufsliste an die Reihenfolge in der sie im Supermarkt stehen anzugleichen. Dabei soll vor allem die Gruppierung nach den Kategorien erfolgen, um den Einkauf im Supermarkt zu erleicht und zu beschleunigen.
 
 \subsubsection{Teilen}
-Die Nutzer können ihre zubereitete Mahlzeit direkt auf social Media Platformen wie z.B. Instagram, Facebook teilen. Dies ist wichtig um eine Community rund um unsere App aufzubauen und kostenlos Werbung zu betreiben.
+Die Nutzer können ihre zubereitete Mahlzeit direkt auf Social Media Platformen wie z.B. Instagram, Facebook teilen. Dies ist wichtig um eine Community rund um unsere App aufzubauen und kostenlos Werbung zu betreiben. Auch entsteht durch diese Funktion eine stärker Bindung zwischen Nutzer und App, da man öffentlich wirbt diese App zu benutzen.
 
 \subsection{Use Case 1: Kalender Slide}
 \subsubsection{General Description}
@@ -340,42 +344,79 @@ Type	: & MAINT \\ \hline
 Descritpion: & Die App muss auf Andriod und iOS geported werden können.  \\ \hline
 \end{tabular}
 
-The type of the NFR shall be taken from one of the following: The table below shall finally be deleted.
-
-\begin{tabular}{|p{.15\linewidth}|p{.25\linewidth}|p{.4\linewidth}|}
-\hline
-MAINT & Maintenance and portability requirement & Which maintenance or porting effort is expected in the future? Internationalization expected? Porting to different hardware platform?... \\ \hline
-SEC & Security requirement & Security requirements comprise confidentiality, data integrity, and availability. How much do we have to consider that data is not accessible to unauthorized persons? Is the correctness and/or consistency of data to be guaranteed? How severe are total system faults? \\ \hline
-LEGAL & Legal requirement & Are there any standards or legal constraints to be considered? \\ \hline
-USE & Usability Requirement & Usability covers all aspects to make the targeted user like to work with the software. \\ \hline
-EFFIC & Efficiency Requirement & Runtime and/or memory efficiency of the program. \\ \hline
+\subsection{NFR 4: Wartbarkeit }
+\begin{tabular}{|p{.2\linewidth}|p{.65\linewidth}|}
+\hline 
+ID: &  maintainability\\ \hline
+Name: & Wartbarkeit \\ \hline
+Type	: & MAINT \\ \hline
+Descritpion: & Da unser Projekt viele Features benötigt, muss die Software einer einfach erweiterbaren Architektur folgen. Dies soll weitere Implementierungen vereinfachen. \\ \hline
 \end{tabular}
+
 \pagebreak
 
 \section{Quantity Structure}
-Es ist anzustreben, möglichst viele Rezepte und Zutaten zu speichern, um eine bestmögliche Auswahl an Rezepten/Gerichten anbieten zu können. Eine Datenbank ist zwingend notwendig, da es zu mehreren Zehtausend Datensätzen kommen wird. Natürlich müssen auch die Daten der Nutzer gespeichert werden, hier ist die Größe noch nicht ganz abschätzbar.
-
+Es ist anzustreben, möglichst viele Rezepte und Zutaten zu speichern, um eine bestmögliche Auswahl an Rezepten/Gerichten anbieten zu können. Hierfür müssen zu allen Zutaten die entsprechenden Nährwerte pro 100g gespeichert werden. Zu den Rezepten müssen Daten wie Name,Zutaten und die Zubereitungsschritte gespeichert werden. Diese Daten werden den Großteil der Datensätze ausmachen. Benutzerdaten bestehen aus Benutzname,Email zusätzlich werden noch ernährungsspezifische Daten erfast wie z.B.: Unverträglichkeiten. Zu Beginn wird es sich um wenige Megabyte an Daten handeln, da wir nicht sofort 10 Tausende Rezepte und deren Zutaten haben werden. Selbiges gilt für die Benutzdaten jedoch werden diese im Vergleich zu den Rezepten weniger ausmachen, da hier pro Benutzer nur wenige Felder gespeichert werden müssen. Das System muss einfach horizontal skalierbar sein um eventuellen Datenmengen von vielen 100gb und mehreren 10 Tausend Anfragen pro Tag gewachsen zu sein.
 
 \pagebreak
 \section{System Architecture and Interfaces}
 
-\begin{itemize}
-    \item Schnittstelle zu Lebensmittellieferanten: Lebensmittel müssen bestellt werden können und diese Bestellung an einene Lieferanten weitergereicht werden.
-    \item Schnittstelle zur Datenbank
-    \item Ionic Mobile Client
-    \item Data-seeding tool
-\end{itemize}
+\begin{center}
+    \includegraphics[width=0.9\textwidth]{res/images/System Architecture.png}
+\end{center}
+
+\noindent Es braucht sowohl einen Mobile- als auch einen Web- Client, da Rezepte angenehmer per PC hinzugefügt werden können als am Smartphone. Die Server stellen per REST die Rezeptdaten für die Clients zur Verfügung. Sie selbst sind wiederum in Docker- Containern verpackt um vertikales skalieren zu ermöglichen. 
+
+\pagebreak
+\section{Acceptance Criteria} 
+
+\subsubsection{Rezeptvorschläge}
+\begin{tabular}{|p{.3\linewidth}|p{.7\linewidth}|}
+\hline
+\cellcolor[gray]{0.5}\textcolor{white}{Steps} & \cellcolor[gray]{0.5}\textcolor{white}{Expected Behavior}\\ \hline
+Rezeptvorschläge&Die Rezeptvorschläge müssen zuverlässig sein und den Bedingungen und den Essgewohnheiten des Users entsprechen \\\hline
+\end{tabular}
+
+\subsubsection{Rezeptsuche}
+\begin{tabular}{|p{.3\linewidth}|p{.7\linewidth}|}
+\hline
+\cellcolor[gray]{0.5}\textcolor{white}{Steps} & \cellcolor[gray]{0.5}\textcolor{white}{Expected Behavior} \\ \hline
+Rezept suchen&Der Nutzer gibt einen Suchtext ein und aktiviert eventuell Filter und bekommt seine gesuchten Rezepte angezeigt. Hierbei werden auch voreingestellt Filter berücksichtigt.\\\hline
+Rezept auswählen&Der Nutzer klickt auf ein Rezept und wird auf die Rezeptansicht weitergeleitet.\\\hline
+\end{tabular}
+
+\subsubsection{Rezeptdetailansicht}
+\begin{tabular}{|p{.3\linewidth}|p{.7\linewidth}|}
+\hline
+\cellcolor[gray]{0.5}\textcolor{white}{Steps} & \cellcolor[gray]{0.5}\textcolor{white}{Expected Behavior} \\ \hline
+Rezept anzeigen&Der Nutzer wählt ein Rezept aus durch die Suche oder durch Vorschläge und erlangt die Detailansicht des Rezepts. Alle Zutaten, Kalorien und die benötigte Kochzeit sind auf dieser Seite aufgelistet.\\\hline
+Zutaten zur Einkaufsliste hinzufügen&Der Nutzer wählt alle Zutaten aus die er in die Einkaufsliste hinzufügen möchte. Standardmäßig sind alle Zutaten ausgewählt außer welche die man meistens schon zu Hause hat. Der Nutzer muss nur noch auf einen Button drücken und alle augewählten Zutaten werden auf die Einkaufsliste geschrieben.\\\hline
+\end{tabular}
+
+\subsubsection{Rezept erstellen}
+\begin{tabular}{|p{.3\linewidth}|p{.7\linewidth}|}
+\hline
+\cellcolor[gray]{0.5}\textcolor{white}{Steps} & \cellcolor[gray]{0.5}\textcolor{white}{Expected Behavior}\\ \hline
+Erstellen & Ein Nutzer kann ein Rezept erstellen, hochladen und für den Eigenbedarf nutzen. \\\hline
+Veröffentlichen & Der Nutzer kann sein hochgeladenes Rezept veröffentlichen und so der Allgemeinheit zur Verfügung stellen.\\\hline
+\end{tabular}
+\subsubsection{Kalorientracker}
+\begin{tabular}{|p{.3\linewidth}|p{.7\linewidth}|}
+\hline
+\cellcolor[gray]{0.5}\textcolor{white}{Steps} & \cellcolor[gray]{0.5}\textcolor{white}{Expected Behavior} \\ \hline
+Kalorientracker&Die Erfassung der Gesamtkalorien muss angemessen akkurat erfolgen und eine gute Übersicht über konsumierte Makronährstoffe bieten. \\\hline
+\end{tabular}
+
+\subsubsection{Einkaufsliste}
+\begin{tabular}{|p{.3\linewidth}|p{.7\linewidth}|}
+\hline
+\cellcolor[gray]{0.5}\textcolor{white}{Steps} & \cellcolor[gray]{0.5}\textcolor{white}{Expected Behavior} \\ \hline
+Einkaufsliste&Das Einfügen und Entfernen eines Artikels muss zuverlässig und schnell erfolgen \\ \hline
+Kategorien& Die Artikel werden der richtigen Waren-Kategorie zugeordnet. \\ \hline
+Sortieren & Die Kategorien werden richtig sortiert, damit der Einkauf im Supermarkt effizient ist und daher Zeit gespart wird.\\\hline
+\end{tabular}
 
 
 
 \pagebreak
-\section{Acceptance Criteria} 
-\noindent Rezeptvorschläge:
-\indenDie Rezeptvorschläge müssen zuverlässig sein und den Bedingungen und den Essgewohnheiten des Users entsprechen
-
-\noindent Kalorientracker:
-Die Erfassung der Gesamtkalorien muss angemessen akkurat erfolgen und eine gute Übersicht über konsumierte Makronährstoffe bieten.
-
-\noindent Einkaufsliste:
-Das Einfügen und Entfernen eines Artikels muss zuverlässig und schnell erfolgen
 \end{document}
